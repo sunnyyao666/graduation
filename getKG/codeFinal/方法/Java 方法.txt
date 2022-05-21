@@ -1,0 +1,75 @@
+Java方法
+<p>
+下面的方法包含 2 个参数 num1 和 num2，它返回这两个参数的最大值。
+</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment">* 返回两个整型变量数据的较大值 </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">max</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">num1</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">num2</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">result</span><span class="hl-code">;
+   </span><span class="hl-reserved">if</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-identifier">num1</span><span class="hl-code"> &gt; </span><span class="hl-identifier">num2</span><span class="hl-brackets">)</span><span class="hl-code">
+      </span><span class="hl-identifier">result</span><span class="hl-code"> = </span><span class="hl-identifier">num1</span><span class="hl-code">;
+   </span><span class="hl-reserved">else</span><span class="hl-code">
+      </span><span class="hl-identifier">result</span><span class="hl-code"> = </span><span class="hl-identifier">num2</span><span class="hl-code">;
+ 
+   </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">result</span><span class="hl-code">; 
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+Java方法
+<p>下面的例子演示了如何定义一个方法，以及如何调用它：</p><div class="example">
+<h2 class="example">TestMax.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestMax</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-comment">/*</span><span class="hl-comment">* 主方法 </span><span class="hl-comment">*/</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">5</span><span class="hl-code">;
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">j</span><span class="hl-code"> = </span><span class="hl-number">2</span><span class="hl-code">;
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">k</span><span class="hl-code"> = </span><span class="hl-identifier">max</span><span class="hl-brackets">(</span><span class="hl-identifier">i</span><span class="hl-code">, </span><span class="hl-identifier">j</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> 和 </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">j</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> 比较，最大值是：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">k</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-comment">/*</span><span class="hl-comment">* 返回两个整数变量较大的值 </span><span class="hl-comment">*/</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">max</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">num1</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">num2</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">result</span><span class="hl-code">;
+      </span><span class="hl-reserved">if</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-identifier">num1</span><span class="hl-code"> &gt; </span><span class="hl-identifier">num2</span><span class="hl-brackets">)</span><span class="hl-code">
+         </span><span class="hl-identifier">result</span><span class="hl-code"> = </span><span class="hl-identifier">num1</span><span class="hl-code">;
+      </span><span class="hl-reserved">else</span><span class="hl-code">
+         </span><span class="hl-identifier">result</span><span class="hl-code"> = </span><span class="hl-identifier">num2</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">result</span><span class="hl-code">; 
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+5 和 2 比较，最大值是：5
+</pre>
+*******
+main方法
+<p>
+下面的程序打印所有的命令行参数：
+</p><div class="example">
+<h2 class="example">CommandLine.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">CommandLine</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> 
+      </span><span class="hl-reserved">for</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code">=</span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code">&lt;</span><span class="hl-identifier">args</span><span class="hl-code">.</span><span class="hl-identifier">length</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">args[</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">i</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">]: </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-identifier">i</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>
+如下所示，运行这个程序：
+</p><pre>
+$ javac CommandLine.java 
+$ java CommandLine this is a command line 200 -100
+args[0]: this
+args[1]: is
+args[2]: a
+args[3]: command
+args[4]: line
+args[5]: 200
+args[6]: -100
+</pre>
+*******

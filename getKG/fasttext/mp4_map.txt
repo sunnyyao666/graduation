@@ -1,0 +1,55 @@
+01、多态的概述，优势，类型转换问题.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、多态的概述，优势，类型转换问题.mp4 __label__Java方法 __label__Java多态
+01、数组概述.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、数组概述.mp4 __label__数组
+01、方法的概述.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、方法的概述.mp4 __label__Java方法
+01、自动类型转换.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、自动类型转换.mp4 __label__自动类型转换
+01、语法：包、权限修饰符.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、语法：包、权限修饰符.mp4 __label__Java包(package) __label__访问控制修饰符
+01、集合概述、Collection集合的体系特点.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、集合概述、Collection集合的体系特点.mp4 __label__Java集合框架（Collection）
+01、面向对象：概述.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/01、面向对象：概述.mp4 __label__对象和类
+02、Collection常用API、遍历方式、存储自定义类型的对象.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、Collection常用API、遍历方式、存储自定义类型的对象.mp4 __label__foreach循环 __label__Java集合框架（Collection）
+02、Set系列集合、Collection体系的总结.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、Set系列集合、Collection体系的总结.mp4 __label__Java集合框架（Collection） __label__HashSet
+02、static：修饰成员变量、内存机制.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、static：修饰成员变量、内存机制.mp4 __label__非访问修饰符 __label__实例变量
+02、String概述、对象创建的原理.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、String概述、对象创建的原理.mp4 __label__String类
+02、分支结构：if、switch、switch穿透性.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、分支结构：if、switch、switch穿透性.mp4 __label__if-else语句 __label__switch-case语句
+02、多态综合案例.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、多态综合案例.mp4 __label__Java多态 __label__Java接口
+02、数组定义方式一、访问、注意事项.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、数组定义方式一、访问、注意事项.mp4 __label__数组
+02、方法定义格式、常见问题.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、方法定义格式、常见问题.mp4 __label__Java方法
+02、语法：final的语法.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、语法：final的语法.mp4 __label__非访问修饰符
+02、面向对象：设计对象、注意事项.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/02、面向对象：设计对象、注意事项.mp4 __label__对象和类
+03、static：修饰成员方法、内存机制.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/03、static：修饰成员方法、内存机制.mp4 __label__Java方法 __label__非访问修饰符
+03、异常概述、分类、认识.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/03、异常概述、分类、认识.mp4 __label__Java异常 __label__Java继承
+03、循环结构：for循环、求和、水仙花数.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/03、循环结构：for循环、求和、水仙花数.mp4 __label__for循环
+03、数组定义方式二、元素默认值规则.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/03、数组定义方式二、元素默认值规则.mp4 __label__数组
+03、语法：常量、常量在开发中的作用.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/03、语法：常量、常量在开发中的作用.mp4 __label__Java常量
+04、List系列集合、集合的并发修改异常问题.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/04、List系列集合、集合的并发修改异常问题.mp4 __label__ArrayList __label__LinkedList
+04、String类常用API.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/04、String类常用API.mp4 __label__String类
+04、异常的处理机制.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/04、异常的处理机制.mp4 __label__捕获异常
+04、循环结构：while循环、珠穆朗玛峰案例.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/04、循环结构：while循环、珠穆朗玛峰案例.mp4 __label__while循环
+04、数组遍历、元素求和.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/04、数组遍历、元素求和.mp4 __label__数组 __label__for循环
+04、类型转换：强制类型转换.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/04、类型转换：强制类型转换.mp4 __label__自动类型转换
+05、Map集合概述、API、遍历方式.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/05、Map集合概述、API、遍历方式.mp4 __label__HashMap __label__foreach循环
+05、异常的强大演示、自定义异常.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/05、异常的强大演示、自定义异常.mp4 __label__自定义异常 __label__Java异常
+05、循环结构：do-while循环，三种循环的总结.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/05、循环结构：do-while循环，三种循环的总结.mp4 __label__for循环 __label__while循环 __label__do…while循环
+05、抽象类：概述、案例、特点.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/05、抽象类：概述、案例、特点.mp4 __label__抽象类
+05、数组案例：求最值、猜数字、随机排名、冒泡排序.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/05、数组案例：求最值、猜数字、随机排名、冒泡排序.mp4 __label__数组 __label__for循环
+06、Arrays.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/06、Arrays.mp4 __label__Arrays类
+06、抽象类：模板方法模式.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/06、抽象类：模板方法模式.mp4 __label__抽象类
+06、数组内存图、常见使用问题.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/06、数组内存图、常见使用问题.mp4 __label__数组
+06、死循环、循环嵌套、break、continue.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/06、死循环、循环嵌套、break、continue.mp4 __label__break关键字 __label__continue关键字 __label__for循环
+06、集合概述、ArrayList的使用.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/06、集合概述、ArrayList的使用.mp4 __label__Java集合框架（Collection） __label__ArrayList
+06、面向对象：封装.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/06、面向对象：封装.mp4 __label__Java封装
+07、接口：概述、多实现、多继承.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/07、接口：概述、多实现、多继承.mp4 __label__Java接口
+07、方法重载、return关键字.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/07、方法重载、return关键字.mp4 __label__Java方法 __label__重载(Overload)
+07、集合案例、ArrayList遍历删除、存对象、搜索.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/07、集合案例、ArrayList遍历删除、存对象、搜索.mp4 __label__Java集合框架（Collection） __label__ArrayList
+08、继承：概述、案例.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/08、继承：概述、案例.mp4 __label__Java继承
+08、运算符：自增、自减.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/08、运算符：自增、自减.mp4 __label__算术运算符
+09、继承：特点、访问特点、方法重写.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/09、继承：特点、访问特点、方法重写.mp4 __label__Java继承 __label__重写(Override)
+09、运算符：自增、自减拓展案例（面试常考）.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/09、运算符：自增、自减拓展案例（面试常考）.mp4 __label__算术运算符
+10、继承：构造器特点、this、super小结.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/10、继承：构造器特点、this、super小结.mp4 __label__Java继承 __label__构造方法
+10、运算符：赋值运算符.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/10、运算符：赋值运算符.mp4 __label__赋值运算符
+11、运算符：关系运算符.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/11、运算符：关系运算符.mp4 __label__关系运算符
+12、运算符：逻辑运算符.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/12、运算符：逻辑运算符.mp4 __label__逻辑运算符
+13、运算符：三元运算符.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/13、运算符：三元运算符.mp4 __label__条件运算符（?:）
+14、运算符：三元运算符练习题.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/14、运算符：三元运算符练习题.mp4 __label__条件运算符（?:）
+15、运算符：优先级问题.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/15、运算符：优先级问题.mp4 __label__条件运算符（?:） __label__Java运算符优先级 __label__逻辑运算符 __label__位运算符 __label__算术运算符 __label__赋值运算符 __label__关系运算符
+总结：程序流程控制.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/总结：程序流程控制.mp4 __label__if-else语句 __label__switch-case语句 __label__for循环 __label__while循环 __label__do…while循环
+总结：类型转换、运算符、API、Scanner.mp4 https://sunny-graduation.oss-cn-shanghai.aliyuncs.com/mp4/总结：类型转换、运算符、API、Scanner.mp4 __label__自动类型转换 __label__条件运算符（?:） __label__Java运算符优先级 __label__逻辑运算符 __label__位运算符 __label__算术运算符 __label__赋值运算符 __label__关系运算符

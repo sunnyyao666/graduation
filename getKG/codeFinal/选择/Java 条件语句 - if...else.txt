@@ -1,0 +1,86 @@
+if-else语句
+<p>if语句实例</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> &lt; </span><span class="hl-number">20</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">这是 if 语句</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+这是 if 语句
+</pre>
+*******
+if-else语句
+<p>if...else语句实例</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">30</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> &lt; </span><span class="hl-number">20</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">这是 if 语句</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">else</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">这是 else 语句</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+这是 else 语句
+</pre>
+*******
+if-else语句
+<p>if...else if...else语句实例</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">30</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> == </span><span class="hl-number">10</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Value of X is 10</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">else</span><span class="hl-code"> </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> == </span><span class="hl-number">20</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Value of X is 20</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">else</span><span class="hl-code"> </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> == </span><span class="hl-number">30</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Value of X is 30</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">else</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">这是 else 语句</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+Value of X is 30
+</pre>
+*******
+if-else语句
+<p>嵌套if...else语句实例</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">30</span><span class="hl-code">;
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">y</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> == </span><span class="hl-number">30</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">y</span><span class="hl-code"> == </span><span class="hl-number">10</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+             </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">X = 30 and Y = 10</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+          </span><span class="hl-brackets">}</span><span class="hl-code">
+       </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+X = 30 and Y = 10
+</pre>
+*******

@@ -1,0 +1,95 @@
+数组
+<p>
+下面的语句首先声明了一个数组变量 myList，接着创建了一个包含 10 个 double 类型元素的数组，并且把它的引用赋值给 myList 变量。
+</p><div class="example">
+<h2 class="example">TestArray.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestArray</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 数组大小</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">size</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 定义数组</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">double</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">myList</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-brackets">[</span><span class="hl-identifier">size</span><span class="hl-brackets">]</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">0</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">5</span><span class="hl-number">.6</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">1</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">4</span><span class="hl-number">.5</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">2</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">3</span><span class="hl-number">.3</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">3</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">13</span><span class="hl-number">.2</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">4</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">4</span><span class="hl-number">.0</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">5</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">34</span><span class="hl-number">.33</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">6</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">34</span><span class="hl-number">.0</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">7</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">45</span><span class="hl-number">.45</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">8</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">99</span><span class="hl-number">.993</span><span class="hl-code">;
+      </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">9</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">11123</span><span class="hl-code">;
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 计算所有元素的总和</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">total</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+      </span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code"> &lt; </span><span class="hl-identifier">size</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">total</span><span class="hl-code"> += </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-identifier">i</span><span class="hl-brackets">]</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">总和为： </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">total</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例输出结果为：</p><pre>
+总和为： 11367.373
+</pre><p>下面的图片描绘了数组 myList。这里 myList 数组里有 10 个 double 元素，它的下标从 0 到 9。</p><p><img alt="java数组结构说明" src="//www.runoob.com/wp-content/uploads/2013/12/12-130Q0221Q5602.jpg"/></p>
+*******
+数组
+<p>
+该实例完整地展示了如何创建、初始化和操纵数组：</p><div class="example">
+<h2 class="example">TestArray.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestArray</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">double</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">myList</span><span class="hl-code"> = </span><span class="hl-brackets">{</span><span class="hl-number">1</span><span class="hl-number">.9</span><span class="hl-code">, </span><span class="hl-number">2</span><span class="hl-number">.9</span><span class="hl-code">, </span><span class="hl-number">3</span><span class="hl-number">.4</span><span class="hl-code">, </span><span class="hl-number">3</span><span class="hl-number">.5</span><span class="hl-brackets">}</span><span class="hl-code">;
+ 
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 打印所有数组元素</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code"> &lt; </span><span class="hl-identifier">myList</span><span class="hl-code">.</span><span class="hl-identifier">length</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-identifier">i</span><span class="hl-brackets">]</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> </span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 计算所有元素的总和</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">total</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+      </span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code"> &lt; </span><span class="hl-identifier">myList</span><span class="hl-code">.</span><span class="hl-identifier">length</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">total</span><span class="hl-code"> += </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-identifier">i</span><span class="hl-brackets">]</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Total is </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">total</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 查找最大元素</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">max</span><span class="hl-code"> = </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-number">0</span><span class="hl-brackets">]</span><span class="hl-code">;
+      </span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">1</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code"> &lt; </span><span class="hl-identifier">myList</span><span class="hl-code">.</span><span class="hl-identifier">length</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">if</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-identifier">i</span><span class="hl-brackets">]</span><span class="hl-code"> &gt; </span><span class="hl-identifier">max</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-identifier">max</span><span class="hl-code"> = </span><span class="hl-identifier">myList</span><span class="hl-brackets">[</span><span class="hl-identifier">i</span><span class="hl-brackets">]</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Max is </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">max</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+1.9
+2.9
+3.4
+3.5
+Total is 11.7
+Max is 3.5
+</pre>
+*******
+数组
+<p>
+该实例用来显示数组 myList 中的所有元素：</p><div class="example">
+<h2 class="example">TestArray.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestArray</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">double</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">myList</span><span class="hl-code"> = </span><span class="hl-brackets">{</span><span class="hl-number">1</span><span class="hl-number">.9</span><span class="hl-code">, </span><span class="hl-number">2</span><span class="hl-number">.9</span><span class="hl-code">, </span><span class="hl-number">3</span><span class="hl-number">.4</span><span class="hl-code">, </span><span class="hl-number">3</span><span class="hl-number">.5</span><span class="hl-brackets">}</span><span class="hl-code">;
+ 
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 打印所有数组元素</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">element</span><span class="hl-code">: </span><span class="hl-identifier">myList</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">element</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+1.9
+2.9
+3.4
+3.5
+</pre>
+*******

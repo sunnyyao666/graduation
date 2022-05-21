@@ -1,0 +1,11 @@
+ArrayList
+<p>ArrayList 类是一个可以动态修改的数组，与普通数组的区别就是它是没有固定大小的限制，我们可以添加或删除元素。</p><p>
+ArrayList 继承了 AbstractList ，并实现了 List 接口。</p><p style="text-align: center;"><img src="https://www.runoob.com/wp-content/uploads/2020/06/ArrayList-1-768x406-1.png"/></p><p>ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下：</p><pre>
+import java.util.ArrayList; // 引入 ArrayList 类
+
+ArrayList&lt;E&gt; objectName =new ArrayList&lt;&gt;();　 // 初始化
+</pre><ul><li>
+<strong>E</strong>: 泛型数据类型，用于设置 objectName 的数据类型，<strong>只能为引用数据类型</strong>。</li><li>
+<strong>objectName</strong>: 对象名。</li></ul><p>ArrayList 是一个数组队列，提供了相关的添加、删除、修改、遍历等功能。
+</p>
+*******

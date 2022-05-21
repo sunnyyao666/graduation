@@ -1,0 +1,142 @@
+重写(Override)
+<p>
+在面向对象原则里，重写意味着可以重写任何现有方法。实例如下：</p><div class="example">
+<h2 class="example">TestDog.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">动物可以移动</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">狗可以跑和走</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestDog</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> Animal 对象</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> Dog 对象</span><span class="hl-comment"></span><span class="hl-code">
+ 
+      </span><span class="hl-identifier">a</span><span class="hl-code">.</span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment"> 执行 Animal 类的方法</span><span class="hl-comment"></span><span class="hl-code">
+ 
+      </span><span class="hl-identifier">b</span><span class="hl-code">.</span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">执行 Dog 类的方法</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+动物可以移动
+狗可以跑和走
+</pre><p>在上面的例子中可以看到，尽管 b 属于 Animal 类型，但是它运行的是 Dog 类的 move方法。</p><p>
+这是由于在编译阶段，只是检查参数的引用类型。</p><p>
+然而在运行时，Java 虚拟机(JVM)指定对象的类型并且运行该对象的方法。</p><p>
+因此在上面的例子中，之所以能编译成功，是因为 Animal 类中存在 move 方法，然而运行时，运行的是特定对象的方法。</p>
+*******
+重写(Override)
+<p>
+思考以下例子：</p><div class="example">
+<h2 class="example">TestDog.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">动物可以移动</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">狗可以跑和走</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">bark</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">狗可以吠叫</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestDog</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> Animal 对象</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> Dog 对象</span><span class="hl-comment"></span><span class="hl-code">
+ 
+      </span><span class="hl-identifier">a</span><span class="hl-code">.</span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment"> 执行 Animal 类的方法</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">b</span><span class="hl-code">.</span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">执行 Dog 类的方法</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">b</span><span class="hl-code">.</span><span class="hl-identifier">bark</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+TestDog.java:30: cannot find symbol
+symbol  : method bark()
+location: class Animal
+                b.bark();
+                 ^
+</pre><p>该程序将抛出一个编译错误，因为b的引用类型Animal没有bark方法。</p>
+*******
+重载(Overload)
+<div class="example">
+<h2 class="example">Overloading.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Overloading</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">test1</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">test2</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">   
+ 
+    </span><span class="hl-comment">//</span><span class="hl-comment">以下两个参数类型顺序不同</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">s</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">test3</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">returntest3</span><span class="hl-quotes">"</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">   
+ 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">s</span><span class="hl-code">,</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">test4</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">returntest4</span><span class="hl-quotes">"</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">   
+ 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">Overloading</span><span class="hl-code"> </span><span class="hl-identifier">o</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Overloading</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">o</span><span class="hl-code">.</span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">o</span><span class="hl-code">.</span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-number">1</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">o</span><span class="hl-code">.</span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-number">1</span><span class="hl-code">,</span><span class="hl-quotes">"</span><span class="hl-string">test3</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">o</span><span class="hl-code">.</span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">test4</span><span class="hl-quotes">"</span><span class="hl-code">,</span><span class="hl-number">1</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+重写(Override)
+<div class="example">
+<h2 class="example">TestDog.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">动物可以移动</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">super</span><span class="hl-code">.</span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> 应用super类的方法</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">狗可以跑和走</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestDog</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+      </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> Dog 对象</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">b</span><span class="hl-code">.</span><span class="hl-identifier">move</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment">执行 Dog类的方法</span><span class="hl-comment"></span><span class="hl-code">
+ 
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+动物可以移动
+狗可以跑和走
+</pre>
+*******

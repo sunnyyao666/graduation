@@ -1,0 +1,8 @@
+HashSet
+<p>
+HashSet 基于 HashMap 来实现的，是一个不允许有重复元素的集合。</p><p>
+    HashSet 允许有 null 值。</p><p>HashSet 是无序的，即不会记录插入的顺序。</p><p>
+HashSet 不是线程安全的， 如果多个线程尝试同时修改 HashSet，则最终结果是不确定的。 您必须在多线程访问时显式同步对 HashSet 的并发访问。
+</p><p>
+ HashSet 实现了 Set 接口。</p><p><img src="https://www.runoob.com/wp-content/uploads/2020/07/java-hashset-hierarchy.png"/></p><p>HashSet 类位于 java.util 包中，使用前需要引入它，语法格式如下：</p><pre>import java.util.HashSet; // 引入 HashSet 类</pre><p>以下实例我们创建一个 HashSet 对象 sites，用于保存字符串元素：</p><pre>HashSet&lt;String&gt; sites = new HashSet&lt;String&gt;();</pre>
+*******

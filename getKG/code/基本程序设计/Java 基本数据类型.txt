@@ -1,0 +1,167 @@
+内置数据类型
+<p>对于数值类型的基本类型的取值范围，我们无需强制去记忆，因为它们的值都已经以常量的形式定义在对应的包装类中了。请看下面的例子：</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">PrimitiveTypeTest</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">  
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> byte  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：byte 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Byte</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Byte</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Byte.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Byte</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Byte.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Byte</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  
+  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> short  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：short 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Short</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Short</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Short.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Short</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Short.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Short</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  
+  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> int  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：int 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Integer</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Integer</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Integer.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Integer</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Integer.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Integer</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  
+  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> long  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：long 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Long</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Long</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Long.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Long</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Long.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Long</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  
+  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> float  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：float 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Float</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Float</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Float.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Float</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Float.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Float</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  
+  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> double  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：double 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Double</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Double</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Double.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Double</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Double.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Double</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  
+  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> char  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">基本类型：char 二进制位数：</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">Character</span><span class="hl-code">.</span><span class="hl-identifier">SIZE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">包装类：java.lang.Character</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最小值：Character.MIN_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code">  
+                + </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-identifier">Character</span><span class="hl-code">.</span><span class="hl-identifier">MIN_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+        </span><span class="hl-comment">//</span><span class="hl-comment"> 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台  </span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">最大值：Character.MAX_VALUE=</span><span class="hl-quotes">"</span><span class="hl-code">  
+                + </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-identifier">Character</span><span class="hl-code">.</span><span class="hl-identifier">MAX_VALUE</span><span class="hl-brackets">)</span><span class="hl-code">;  
+    </span><span class="hl-brackets">}</span><span class="hl-code">  
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>编译以上代码输出结果如下所示：</p><pre>
+基本类型：byte 二进制位数：8
+包装类：java.lang.Byte
+最小值：Byte.MIN_VALUE=-128
+最大值：Byte.MAX_VALUE=127
+
+基本类型：short 二进制位数：16
+包装类：java.lang.Short
+最小值：Short.MIN_VALUE=-32768
+最大值：Short.MAX_VALUE=32767
+
+基本类型：int 二进制位数：32
+包装类：java.lang.Integer
+最小值：Integer.MIN_VALUE=-2147483648
+最大值：Integer.MAX_VALUE=2147483647
+
+基本类型：long 二进制位数：64
+包装类：java.lang.Long
+最小值：Long.MIN_VALUE=-9223372036854775808
+最大值：Long.MAX_VALUE=9223372036854775807
+
+基本类型：float 二进制位数：32
+包装类：java.lang.Float
+最小值：Float.MIN_VALUE=1.4E-45
+最大值：Float.MAX_VALUE=3.4028235E38
+
+基本类型：double 二进制位数：64
+包装类：java.lang.Double
+最小值：Double.MIN_VALUE=4.9E-324
+最大值：Double.MAX_VALUE=1.7976931348623157E308
+
+基本类型：char 二进制位数：16
+包装类：java.lang.Character
+最小值：Character.MIN_VALUE=0
+最大值：Character.MAX_VALUE=65535
+</pre><p>Float和Double的最小值和最大值都是以科学记数法的形式输出的，结尾的"E+数字"表示E之前的数字要乘以10的多少次方。比如3.14E3就是3.14 × 10<sup>3</sup> =3140，3.14E-3 就是 3.14 x 10<sup>-3</sup> =0.00314。</p><p>实际上，JAVA中还存在另外一种基本类型 void，它也有对应的包装类 java.lang.Void，不过我们无法直接对它们进行操作。</p>
+*******
+自动类型转换
+<p>必须满足转换前的数据类型的位数要低于转换后的数据类型，例如: short数据类型的位数为16位，就可以自动转换位数为32的int类型，同样float数据类型的位数为32，可以自动转换为64位的double类型。
+</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">ZiDongLeiZhuan</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">c1</span><span class="hl-code">=</span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">定义一个char类型</span><span class="hl-comment"></span><span class="hl-code">
+            </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i1</span><span class="hl-code"> = </span><span class="hl-identifier">c1</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">char自动类型转换为int</span><span class="hl-comment"></span><span class="hl-code">
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">char自动类型转换为int后的值等于</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">i1</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">c2</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">A</span><span class="hl-quotes">'</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">定义一个char类型</span><span class="hl-comment"></span><span class="hl-code">
+            </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i2</span><span class="hl-code"> = </span><span class="hl-identifier">c2</span><span class="hl-code">+</span><span class="hl-number">1</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">char 类型和 int 类型计算</span><span class="hl-comment"></span><span class="hl-code">
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">char类型和int计算后的值等于</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">i2</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>运行结果为:</p><pre>
+char自动类型转换为int后的值等于97
+char类型和int计算后的值等于66
+</pre><p><strong>解析：</strong>c1 的值为字符 <strong>a</strong> ,查 ASCII 码表可知对应的 int 类型值为 97， A 对应值为 65，所以 <span class="marked">i2=65+1=66</span>。</p>
+*******
+内置数据类型
+<p>下面是关于类型默认值的实例</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code"><div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">bool</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">byte</span><span class="hl-code"> </span><span class="hl-identifier">by</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">d</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">float</span><span class="hl-code"> </span><span class="hl-identifier">f</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">long</span><span class="hl-code"> </span><span class="hl-identifier">l</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">short</span><span class="hl-code"> </span><span class="hl-identifier">sh</span><span class="hl-code">;
+    </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">str</span><span class="hl-code">;
+ 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Bool :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">bool</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Byte :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">by</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Character:</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">ch</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Double :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">d</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Float :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">f</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Integer :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">i</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Long :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">l</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Short :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">sh</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">String :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">str</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div></pre></div><p>实例输出结果为：</p><pre>Bool     :false
+Byte     :0
+Character:
+Double   :0.0
+Float    :0.0
+Integer  :0
+Long     :0
+Short    :0
+String   :null</pre>
+*******
+自动类型转换
+<p>以下是强制类型转换的实例</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">QiangZhiZhuanHuan</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i1</span><span class="hl-code"> = </span><span class="hl-number">123</span><span class="hl-code">;
+        </span><span class="hl-types">byte</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-brackets">(</span><span class="hl-types">byte</span><span class="hl-brackets">)</span><span class="hl-identifier">i1</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">强制类型转换为byte</span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">int强制类型转换为byte后的值等于</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>运行结果：</p><pre>
+int强制类型转换为byte后的值等于123
+</pre>
+*******

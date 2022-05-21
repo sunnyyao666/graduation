@@ -1,0 +1,263 @@
+算术运算符
+<p>下面的简单示例程序演示了算术运算符。</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-number">20</span><span class="hl-code">;
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-number">25</span><span class="hl-code">;
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">d</span><span class="hl-code"> = </span><span class="hl-number">25</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a + b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> + </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a - b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> - </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a * b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> * </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">b / a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">b</span><span class="hl-code"> / </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">b % a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">b</span><span class="hl-code"> % </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c % a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">c</span><span class="hl-code"> % </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a++   = </span><span class="hl-quotes">"</span><span class="hl-code"> +  </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a--   = </span><span class="hl-quotes">"</span><span class="hl-code"> +  </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code">--</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-comment">//</span><span class="hl-comment"> 查看  d++ 与 ++d 的不同</span><span class="hl-comment"></span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">d++   = </span><span class="hl-quotes">"</span><span class="hl-code"> +  </span><span class="hl-brackets">(</span><span class="hl-identifier">d</span><span class="hl-code">++</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">++d   = </span><span class="hl-quotes">"</span><span class="hl-code"> +  </span><span class="hl-brackets">(</span><span class="hl-code">++</span><span class="hl-identifier">d</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div></pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+a + b = 30
+a - b = -10
+a * b = 200
+b / a = 2
+b % a = 0
+c % a = 5
+a++   = 10
+a--   = 11
+d++   = 25
+++d   = 27
+</pre>
+*******
+算术运算符
+<p>以下是两种自增自减运算符的实例，注意区别</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">selfAddMinus</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">3</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">定义一个变量；</span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = ++</span><span class="hl-identifier">a</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">自增运算</span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-number">3</span><span class="hl-code">;
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">d</span><span class="hl-code"> = --</span><span class="hl-identifier">c</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">自减运算</span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">进行自增运算后的值等于</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">进行自减运算后的值等于</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">d</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>运行结果为：</p><pre>
+进行自增运算后的值等于4
+进行自减运算后的值等于2</pre><p>解析：</p><ul>
+<li><p>int b = ++a; 拆分运算过程为: a=a+1=4; b=a=4, 最后结果为b=4,a=4</p>
+</li><li><p>
+int d = --c; 拆分运算过程为: c=c-1=2; d=c=2, 最后结果为d=2,c=2</p></li>
+</ul><p>另一种：</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">selfAddMinus</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">5</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">定义一个变量；</span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-number">5</span><span class="hl-code">;
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">2</span><span class="hl-code">*++</span><span class="hl-identifier">a</span><span class="hl-code">;
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">y</span><span class="hl-code"> = </span><span class="hl-number">2</span><span class="hl-code">*</span><span class="hl-identifier">b</span><span class="hl-code">++;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">自增运算符前缀运算后a=</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">a</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">,x=</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">x</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">自增运算符后缀运算后b=</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">b</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">,y=</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">y</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>运行结果为：</p><pre>
+自增运算符前缀运算后a=6，x=12
+自增运算符后缀运算后b=6，y=10</pre>
+*******
+关系运算符
+<p>下面的简单示例程序演示了关系运算符。</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-number">20</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a == b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> == </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a != b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> != </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &gt; b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> &gt; </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &lt; b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> &lt; </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">b &gt;= a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">b</span><span class="hl-code"> &gt;= </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">b &lt;= a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">b</span><span class="hl-code"> &lt;= </span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+a == b = false
+a != b = true
+a &gt; b = false
+a &lt; b = true
+b &gt;= a = true
+b &lt;= a = false
+</pre>
+*******
+位运算符
+<p>下面的简单示例程序演示了位运算符。
+</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">60</span><span class="hl-code">; </span><span class="hl-comment">/*</span><span class="hl-comment"> 60 = 0011 1100 </span><span class="hl-comment">*/</span><span class="hl-code"> 
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-number">13</span><span class="hl-code">; </span><span class="hl-comment">/*</span><span class="hl-comment"> 13 = 0000 1101 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> &amp; </span><span class="hl-identifier">b</span><span class="hl-code">;       </span><span class="hl-comment">/*</span><span class="hl-comment"> 12 = 0000 1100 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &amp; b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> | </span><span class="hl-identifier">b</span><span class="hl-code">;       </span><span class="hl-comment">/*</span><span class="hl-comment"> 61 = 0011 1101 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a | b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> ^ </span><span class="hl-identifier">b</span><span class="hl-code">;       </span><span class="hl-comment">/*</span><span class="hl-comment"> 49 = 0011 0001 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a ^ b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = ~</span><span class="hl-identifier">a</span><span class="hl-code">;          </span><span class="hl-comment">/*</span><span class="hl-comment">-61 = 1100 0011 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">~a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> &lt;&lt; </span><span class="hl-number">2</span><span class="hl-code">;     </span><span class="hl-comment">/*</span><span class="hl-comment"> 240 = 1111 0000 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &lt;&lt; 2 = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> &gt;&gt; </span><span class="hl-number">2</span><span class="hl-code">;     </span><span class="hl-comment">/*</span><span class="hl-comment"> 15 = 1111 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &gt;&gt; 2  = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+  
+     </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> &gt;&gt;&gt; </span><span class="hl-number">2</span><span class="hl-code">;     </span><span class="hl-comment">/*</span><span class="hl-comment"> 15 = 0000 1111 </span><span class="hl-comment">*/</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &gt;&gt;&gt; 2 = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code"> </span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+a &amp; b = 12
+a | b = 61
+a ^ b = 49
+~a = -61
+a &lt;&lt; 2 = 240
+a &gt;&gt; 2  = 15
+a &gt;&gt;&gt; 2 = 15
+</pre>
+*******
+逻辑运算符
+<p>下面的简单示例程序演示了逻辑运算符</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-reserved">true</span><span class="hl-code">;
+     </span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-reserved">false</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a &amp;&amp; b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code">&amp;&amp;</span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a || b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code">||</span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">!(a &amp;&amp; b) = </span><span class="hl-quotes">"</span><span class="hl-code"> + !</span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> &amp;&amp; </span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+a &amp;&amp; b = false
+a || b = true
+!(a &amp;&amp; b) = true
+</pre>
+*******
+逻辑运算符
+<p>短路逻辑运算符实例</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">LuoJi</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">5</span><span class="hl-code">;</span><span class="hl-comment">//</span><span class="hl-comment">定义一个变量；</span><span class="hl-comment"></span><span class="hl-code">
+        </span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code">&lt;</span><span class="hl-number">4</span><span class="hl-brackets">)</span><span class="hl-code">&amp;&amp;</span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code">++&lt;</span><span class="hl-number">10</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">使用短路逻辑运算符的结果为</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">b</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">a的结果为</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">a</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>运行结果为：</p><pre>使用短路逻辑运算符的结果为false
+a的结果为5</pre><p><b>解析：
+</b>
+该程序使用到了短路逻辑运算符(&amp;&amp;)，首先判断 a&lt;4 的结果为 false，则 b 的结果必定是 false，所以不再执行第二个操作 a++&lt;10 的判断，所以 a 的值为 5。
+</p>
+*******
+赋值运算符
+<p>下面的简单示例程序演示了赋值运算符。</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-number">20</span><span class="hl-code">;
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">a</span><span class="hl-code"> + </span><span class="hl-identifier">b</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c = a + b = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> += </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c += a  = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> -= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c -= a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> *= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c *= a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-number">15</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> /= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c /= a = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-number">15</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> %= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c %= a  = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> &lt;&lt;= </span><span class="hl-number">2</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c &lt;&lt;= 2 = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> &gt;&gt;= </span><span class="hl-number">2</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c &gt;&gt;= 2 = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> &gt;&gt;= </span><span class="hl-number">2</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c &gt;&gt;= 2 = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> &amp;= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c &amp;= a  = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> ^= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c ^= a   = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">c</span><span class="hl-code"> |= </span><span class="hl-identifier">a</span><span class="hl-code"> ;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">c |= a   = </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">c</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+c = a + b = 30
+c += a  = 40
+c -= a = 30
+c *= a = 300
+c /= a = 1
+c %= a  = 5
+c &lt;&lt;= 2 = 20
+c &gt;&gt;= 2 = 5
+c &gt;&gt;= 2 = 1
+c &amp;= a  = 0
+c ^= a   = 10
+c |= a   = 10
+</pre>
+*******
+条件运算符（?:）
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> , </span><span class="hl-identifier">b</span><span class="hl-code">;
+      </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 如果 a 等于 1 成立，则设置 b 为 20，否则为 30</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> == </span><span class="hl-number">1</span><span class="hl-brackets">)</span><span class="hl-code"> ? </span><span class="hl-number">20</span><span class="hl-code"> : </span><span class="hl-number">30</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">Value of b is : </span><span class="hl-quotes">"</span><span class="hl-code"> +  </span><span class="hl-identifier">b</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 如果 a 等于 10 成立，则设置 b 为 20，否则为 30</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">b</span><span class="hl-code"> = </span><span class="hl-brackets">(</span><span class="hl-identifier">a</span><span class="hl-code"> == </span><span class="hl-number">10</span><span class="hl-brackets">)</span><span class="hl-code"> ? </span><span class="hl-number">20</span><span class="hl-code"> : </span><span class="hl-number">30</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">Value of b is : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">b</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+Value of b is : 30
+Value of b is : 20
+</pre>
+*******

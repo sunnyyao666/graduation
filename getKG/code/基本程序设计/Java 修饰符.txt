@@ -1,0 +1,129 @@
+访问控制修饰符
+<p>下面的类使用了私有访问修饰符：</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Logger</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">format</span><span class="hl-code">;
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">getFormat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">format</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setFormat</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">format</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">format</span><span class="hl-code"> = </span><span class="hl-identifier">format</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>
+实例中，Logger 类中的 format 变量为私有变量，所以其他类不能直接得到和设置该变量的值。为了使其他类能够操作该变量，定义了两个 public 方法：getFormat() （返回 format的值）和 setFormat(String)（设置 format 的值）
+</p>
+*******
+访问控制修饰符
+<p>
+下面的父类使用了 protected 访问修饰符，子类重写了父类的 openSpeaker() 方法。</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">AudioPlayer</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">protected</span><span class="hl-code"> </span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">openSpeaker</span><span class="hl-brackets">(</span><span class="hl-identifier">Speaker</span><span class="hl-code"> </span><span class="hl-identifier">sp</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 实现细节</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">StreamingAudioPlayer</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">AudioPlayer</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">protected</span><span class="hl-code"> </span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">openSpeaker</span><span class="hl-brackets">(</span><span class="hl-identifier">Speaker</span><span class="hl-code"> </span><span class="hl-identifier">sp</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 实现细节</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>如果把 openSpeaker() 方法声明为 private，那么除了 AudioPlayer 之外的类将不能访问该方法。</p><p>
+如果把 openSpeaker() 声明为 public，那么所有的类都能够访问该方法。</p><p>
+如果我们只想让该方法对其所在类的子类可见，则将该方法声明为 protected。</p>
+*******
+访问控制修饰符
+<p>
+如下例所示，变量和方法的声明可以不使用任何修饰符。
+</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">version</span><span class="hl-code"> = </span><span class="hl-quotes">"</span><span class="hl-string">1.5.1</span><span class="hl-quotes">"</span><span class="hl-code">;
+</span><span class="hl-types">boolean</span><span class="hl-code"> </span><span class="hl-identifier">processOrder</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-reserved">true</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+访问控制修饰符
+<p>
+以下函数使用了公有访问控制：</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">arguments</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-comment">//</span><span class="hl-comment"> ...</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+非访问修饰符
+<p>
+如下例所示，static 修饰符用来创建类方法和类变量。</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">InstanceCounter</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">numInstances</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+   </span><span class="hl-reserved">protected</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">getCount</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">numInstances</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">addInstance</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">numInstances</span><span class="hl-code">++;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-identifier">InstanceCounter</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">InstanceCounter</span><span class="hl-code">.</span><span class="hl-identifier">addInstance</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">arguments</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Starting with </span><span class="hl-quotes">"</span><span class="hl-code"> +
+      </span><span class="hl-identifier">InstanceCounter</span><span class="hl-code">.</span><span class="hl-identifier">getCount</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> instances</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">; </span><span class="hl-identifier">i</span><span class="hl-code"> &lt; </span><span class="hl-number">500</span><span class="hl-code">; ++</span><span class="hl-identifier">i</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">InstanceCounter</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+          </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Created </span><span class="hl-quotes">"</span><span class="hl-code"> +
+      </span><span class="hl-identifier">InstanceCounter</span><span class="hl-code">.</span><span class="hl-identifier">getCount</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> instances</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例运行编辑结果如下:</p><pre>
+Starting with 0 instances
+Created 500 instances
+</pre>
+*******
+非访问修饰符
+<p>下面是类常量的例子</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-types">final</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">value</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+  </span><span class="hl-comment">//</span><span class="hl-comment"> 下面是声明常量的实例</span><span class="hl-comment"></span><span class="hl-code">
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">final</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">BOXWIDTH</span><span class="hl-code"> = </span><span class="hl-number">6</span><span class="hl-code">;
+  </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">final</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">TITLE</span><span class="hl-code"> = </span><span class="hl-quotes">"</span><span class="hl-string">Manager</span><span class="hl-quotes">"</span><span class="hl-code">;
+ 
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">changeValue</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-identifier">value</span><span class="hl-code"> = </span><span class="hl-number">12</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment">将输出一个错误</span><span class="hl-comment"></span><span class="hl-code">
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+非访问修饰符
+<p>抽象方法的声明以分号结尾，例如：<strong>public abstract sample();</strong>。
+</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">abstract</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">SuperClass</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">abstract</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">m</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment">抽象方法</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">SubClass</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">SuperClass</span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-comment">//</span><span class="hl-comment">实现抽象方法</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">m</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+          .........
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******

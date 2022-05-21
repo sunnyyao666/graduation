@@ -1,0 +1,34 @@
+Character类
+<p>
+当打印语句遇到一个转义序列时，编译器可以正确地对其进行解释。
+</p><p>以下实例转义双引号并输出：</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">访问</span><span class="hl-special">\"</span><span class="hl-string">JavaKG!</span><span class="hl-special">\"</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：
+</p><pre>
+访问"JavaKG!"
+</pre>
+*******
+Character类
+<p>例如，将一个char类型的参数传递给需要一个Character类型参数的方法时，那么编译器会自动地将char类型参数转换为Character对象。
+这种特征称为装箱，反过来称为拆箱。
+
+</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">//</span><span class="hl-comment"> 原始字符 'a' 装箱到 Character 对象 ch 中</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-identifier">Character</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 原始字符 'x' 用 test 方法装箱</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-comment">//</span><span class="hl-comment"> 返回拆箱的值到 'c'</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">x</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</pre>
+</div>
+*******

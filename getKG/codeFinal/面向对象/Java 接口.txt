@@ -1,0 +1,31 @@
+Java接口
+<div class="example">
+<h2 class="example">MammalInt.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> 文件名 : MammalInt.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">MammalInt</span><span class="hl-code"> </span><span class="hl-reserved">implements</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Mammal eats</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">travel</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Mammal travels</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code"> 
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">noOfLegs</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">MammalInt</span><span class="hl-code"> </span><span class="hl-identifier">m</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">MammalInt</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">m</span><span class="hl-code">.</span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">m</span><span class="hl-code">.</span><span class="hl-identifier">travel</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下:</p><pre>
+Mammal eats
+Mammal travels
+</pre>
+*******

@@ -1,0 +1,24 @@
+<h2>LinkedList</h2>
+<p>链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的地址。</p><p>
+链表可分为单向链表和双向链表。</p><p>一个单向链表包含两个值: 当前节点的值和一个指向下一个节点的链接。</p><p><img src="https://www.runoob.com/wp-content/uploads/2020/06/408px-Singly-linked-list.svg_.png"/></p><p>一个双向链表有三个整数值: 数值、向后的节点链接、向前的节点链接。</p><p><img src="https://www.runoob.com/wp-content/uploads/2020/06/610px-Doubly-linked-list.svg_.png"/></p><p>Java LinkedList（链表） 类似于 ArrayList，是一种常用的数据容器。</p><p>与 ArrayList 相比，LinkedList 的增加和删除的操作效率更高，而查找和修改的操作效率较低。</p><p>
+<strong>以下情况使用 ArrayList :</strong></p><ul>
+<li>
+频繁访问列表中的某一个元素。</li><li>
+只需要在列表末尾进行添加和删除元素操作。</li></ul><p><strong>以下情况使用 LinkedList :</strong></p><ul>
+<li>
+你需要通过循环迭代来访问列表中的某些元素。</li><li>
+需要频繁的在列表开头、中间、末尾等位置进行添加和删除元素操作。</li></ul><p>LinkedList 继承了 AbstractSequentialList 类。</p><p>
+LinkedList 实现了 Queue 接口，可作为队列使用。</p><p>
+LinkedList 实现了 List 接口，可进行列表的相关操作。</p><p>
+LinkedList 实现了 Deque 接口，可作为队列使用。</p><p>
+LinkedList 实现了 Cloneable 接口，可实现克隆。</p><p>
+LinkedList 实现了 java.io.Serializable 接口，即可支持序列化，能通过序列化去传输。</p><p>
+<img src="https://www.runoob.com/wp-content/uploads/2020/06/linkedlist-2020-11-16.png"/></p><p>
+LinkedList 类位于 java.util 包中，使用前需要引入它，语法格式如下：</p><pre>
+// 引入 LinkedList 类
+import java.util.LinkedList; 
+
+LinkedList&lt;E&gt; list = new LinkedList&lt;E&gt;();   // 普通创建方法
+或者
+LinkedList&lt;E&gt; list = new LinkedList(Collection&lt;? extends E&gt; c); // 使用集合创建链表</pre>
+*******

@@ -1,0 +1,159 @@
+while 循环
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+      </span><span class="hl-reserved">while</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> &lt; </span><span class="hl-number">20</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">value of x : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">x</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">x</span><span class="hl-code">++;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+value of x : 10
+value of x : 11
+value of x : 12
+value of x : 13
+value of x : 14
+value of x : 15
+value of x : 16
+value of x : 17
+value of x : 18
+value of x : 19
+</pre>
+*******
+do…while 循环
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">do</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">value of x : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">x</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">x</span><span class="hl-code">++;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">while</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> &lt; </span><span class="hl-number">20</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+value of x : 10
+value of x : 11
+value of x : 12
+value of x : 13
+value of x : 14
+value of x : 15
+value of x : 16
+value of x : 17
+value of x : 18
+value of x : 19
+</pre>
+*******
+for 循环
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+      </span><span class="hl-reserved">for</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-number">10</span><span class="hl-code">; </span><span class="hl-identifier">x</span><span class="hl-code"> &lt; </span><span class="hl-number">20</span><span class="hl-code">; </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-identifier">x</span><span class="hl-code">+</span><span class="hl-number">1</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">value of x : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">x</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+value of x : 10
+value of x : 11
+value of x : 12
+value of x : 13
+value of x : 14
+value of x : 15
+value of x : 16
+value of x : 17
+value of x : 18
+value of x : 19
+</pre>
+*******
+Java foreach 循环
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">numbers</span><span class="hl-code"> = </span><span class="hl-brackets">{</span><span class="hl-number">10</span><span class="hl-code">, </span><span class="hl-number">20</span><span class="hl-code">, </span><span class="hl-number">30</span><span class="hl-code">, </span><span class="hl-number">40</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-brackets">}</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">for</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> : </span><span class="hl-identifier">numbers</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">,</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">names</span><span class="hl-code"> =</span><span class="hl-brackets">{</span><span class="hl-quotes">"</span><span class="hl-string">James</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-quotes">"</span><span class="hl-string">Larry</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-quotes">"</span><span class="hl-string">Tom</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-quotes">"</span><span class="hl-string">Lacy</span><span class="hl-quotes">"</span><span class="hl-brackets">}</span><span class="hl-code">;
+      </span><span class="hl-reserved">for</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code"> : </span><span class="hl-identifier">names</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">,</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+10,20,30,40,50,
+James,Larry,Tom,Lacy,
+</pre>
+*******
+break 关键字
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">numbers</span><span class="hl-code"> = </span><span class="hl-brackets">{</span><span class="hl-number">10</span><span class="hl-code">, </span><span class="hl-number">20</span><span class="hl-code">, </span><span class="hl-number">30</span><span class="hl-code">, </span><span class="hl-number">40</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-brackets">}</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">for</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> : </span><span class="hl-identifier">numbers</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-comment">//</span><span class="hl-comment"> x 等于 30 时跳出循环</span><span class="hl-comment"></span><span class="hl-code">
+         </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> == </span><span class="hl-number">30</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">break</span><span class="hl-code">;
+         </span><span class="hl-brackets">}</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+10
+20
+</pre>
+*******
+continue 关键字
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">numbers</span><span class="hl-code"> = </span><span class="hl-brackets">{</span><span class="hl-number">10</span><span class="hl-code">, </span><span class="hl-number">20</span><span class="hl-code">, </span><span class="hl-number">30</span><span class="hl-code">, </span><span class="hl-number">40</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-brackets">}</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">for</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> : </span><span class="hl-identifier">numbers</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> == </span><span class="hl-number">30</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">continue</span><span class="hl-code">;
+         </span><span class="hl-brackets">}</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">x</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+10
+20
+40
+50
+</pre>
+*******

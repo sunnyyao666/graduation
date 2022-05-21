@@ -1,0 +1,106 @@
+Java局部变量
+<p>在以下实例中age是一个局部变量。定义在pupAge()方法中，它的作用域就限制在这个方法中。</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">package</span><span class="hl-code"> </span><span class="hl-identifier">com</span><span class="hl-code">.</span><span class="hl-identifier">JavaKG</span><span class="hl-code">.</span><span class="hl-identifier">test</span><span class="hl-code">;
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-brackets">{</span><span class="hl-code"> 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">pupAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+      </span><span class="hl-identifier">age</span><span class="hl-code"> = </span><span class="hl-identifier">age</span><span class="hl-code"> + </span><span class="hl-number">7</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">小狗的年龄是: </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">age</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-identifier">test</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">test</span><span class="hl-code">.</span><span class="hl-identifier">pupAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下:</p><pre>
+小狗的年龄是: 7
+</pre>
+*******
+Java局部变量
+<p>在下面的例子中 age 变量没有初始化，所以在编译时会出错：</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">package</span><span class="hl-code"> </span><span class="hl-identifier">com</span><span class="hl-code">.</span><span class="hl-identifier">JavaKG</span><span class="hl-code">.</span><span class="hl-identifier">test</span><span class="hl-code">;
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-brackets">{</span><span class="hl-code"> 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">pupAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+      </span><span class="hl-identifier">age</span><span class="hl-code"> = </span><span class="hl-identifier">age</span><span class="hl-code"> + </span><span class="hl-number">7</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">小狗的年龄是 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">age</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-identifier">test</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">test</span><span class="hl-code">.</span><span class="hl-identifier">pupAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下:</p><pre>
+Test.java:4:variable number might not have been initialized
+age = age + 7;
+         ^
+1 error
+</pre>
+*******
+实例变量
+<div class="example">
+<h2 class="example">Employee.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-comment">//</span><span class="hl-comment"> 这个实例变量对子类可见</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-comment">//</span><span class="hl-comment"> 私有变量，仅在该类可见</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">salary</span><span class="hl-code">;
+   </span><span class="hl-comment">//</span><span class="hl-comment">在构造器中对name赋值</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">empName</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">empName</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-comment">//</span><span class="hl-comment">设定salary的值</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setSalary</span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">empSal</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">salary</span><span class="hl-code"> = </span><span class="hl-identifier">empSal</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">  
+   </span><span class="hl-comment">//</span><span class="hl-comment"> 打印信息</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">printEmp</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">名字 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">name</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">薪水 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">salary</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-identifier">empOne</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">JAVAKG</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empOne</span><span class="hl-code">.</span><span class="hl-identifier">setSalary</span><span class="hl-brackets">(</span><span class="hl-number">1000</span><span class="hl-number">.0</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empOne</span><span class="hl-code">.</span><span class="hl-identifier">printEmp</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下:</p><pre>
+$ javac Employee.java 
+$ java Employee
+名字 : JAVAKG
+薪水 : 1000.0
+</pre>
+*******
+类变量（静态变量）
+<p>实例：</p><div class="example">
+<h2 class="example">Employee.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-comment">//</span><span class="hl-comment">salary是静态的私有变量</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">salary</span><span class="hl-code">;
+    </span><span class="hl-comment">//</span><span class="hl-comment"> DEPARTMENT是一个常量</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">final</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">DEPARTMENT</span><span class="hl-code"> = </span><span class="hl-quotes">"</span><span class="hl-string">开发人员</span><span class="hl-quotes">"</span><span class="hl-code">;
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">salary</span><span class="hl-code"> = </span><span class="hl-number">10000</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">DEPARTMENT</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">平均工资:</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">salary</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下:</p><pre>
+开发人员平均工资:10000.0
+</pre>
+*******

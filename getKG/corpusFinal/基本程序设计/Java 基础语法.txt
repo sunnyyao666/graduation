@@ -1,0 +1,255 @@
+Java基础语法
+<p>编写 Java 程序时，应注意以下几点：</p><ul>
+<li>
+<strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
+<li>
+<strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
+<li>
+<strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
+<li>
+<strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
+<li>
+<strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
+</ul><hr/><h3>Java 标识符</h3><p>Java 所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。</p><p>关于 Java 标识符，有以下几点需要注意：</p><ul>
+<li>
+		所有的标识符都应该以字母（A-Z 或者 a-z）,美元符（$）、或者下划线（_）开始</li>
+<li>
+		首字符之后可以是字母（A-Z 或者 a-z）,美元符（$）、下划线（_）或数字的任何字符组合</li>
+<li>
+		关键字不能用作标识符</li>
+<li>
+		标识符是大小写敏感的</li>
+<li>
+		合法标识符举例：age、$salary、_value、__1_value</li>
+<li>
+		非法标识符举例：123abc、-salary</li>
+</ul><hr/><h3>Java修饰符</h3><p>
+	像其他语言一样，Java可以使用修饰符来修饰类中方法和属性。主要有两类修饰符：</p><ul>
+<li>访问控制修饰符 : default, public , protected, private</li>
+<li>非访问控制修饰符 : final, abstract, static, synchronized </li>
+</ul><hr/><h3>
+	Java 变量</h3><p>Java 中主要有如下几种类型的变量</p><ul>
+<li>局部变量</li>
+<li>类变量（静态变量）</li>
+<li>成员变量（非静态变量）</li>
+</ul><hr/><h3>Java 数组</h3><p>数组是储存在堆上的对象，可以保存多个同类型变量。之后将会学到如何声明、构造以及初始化一个数组。</p><hr/><h3>Java 源程序与编译型运行区别</h3><p>如下图所示：</p><p><img src="//www.runoob.com/wp-content/uploads/2013/12/ZSSDMld.png"/></p>
+*******
+Java关键字
+<p>
+下面列出了 Java 关键字。这些保留字不能用于常量、变量、和任何标识符的名称。
+</p><table class="reference">
+<tbody><tr>
+<th>类别</th>
+<th>关键字</th>
+<th>说明</th>
+</tr>
+<tr>
+<td align="center" rowspan="4">访问控制</td>
+<td>private</td>
+<td>私有的</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>受保护的</td>
+</tr>
+<tr>
+<td>public</td>
+<td>公共的</td>
+</tr>
+<tr>
+<td>default </td>
+<td>默认</td>
+</tr>
+<tr>
+<td align="center" rowspan="13">类、方法和变量修饰符</td>
+<td>abstract</td>
+<td>声明抽象</td>
+</tr>
+<tr>
+<td>class</td>
+<td>类</td>
+</tr>
+<tr>
+<td>extends</td>
+<td>扩充,继承</td>
+</tr>
+<tr>
+<td>final</td>
+<td>最终值,不可改变的</td>
+</tr>
+<tr>
+<td>implements</td>
+<td>实现（接口）</td>
+</tr>
+<tr>
+<td>interface</td>
+<td>接口</td>
+</tr>
+<tr>
+<td>native</td>
+<td>本地，原生方法（非 Java 实现）</td>
+</tr>
+<tr>
+<td>new</td>
+<td>新,创建</td>
+</tr>
+<tr>
+<td>static</td>
+<td>静态</td>
+</tr>
+<tr>
+<td>strictfp</td>
+<td>严格,精准</td>
+</tr>
+<tr>
+<td>synchronized</td>
+<td>线程,同步</td>
+</tr>
+<tr>
+<td>transient</td>
+<td>短暂</td>
+</tr>
+<tr>
+<td>volatile</td>
+<td>易失</td>
+</tr>
+<tr>
+<td align="center" rowspan="12">程序控制语句</td>
+<td>break</td>
+<td>跳出循环</td>
+</tr>
+<tr>
+<td>case</td>
+<td>定义一个值以供 switch 选择</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>继续</td>
+</tr>
+<tr>
+<td>default</td>
+<td>默认</td>
+</tr>
+<tr>
+<td>do</td>
+<td>运行</td>
+</tr>
+<tr>
+<td>else</td>
+<td>否则</td>
+</tr>
+<tr>
+<td>for</td>
+<td>循环</td>
+</tr>
+<tr>
+<td>if</td>
+<td>如果</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td>实例</td>
+</tr>
+<tr>
+<td>return</td>
+<td>返回</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>根据值选择执行</td>
+</tr>
+<tr>
+<td>while</td>
+<td>循环</td>
+</tr>
+<tr>
+<td align="center" rowspan="6">错误处理</td>
+<td>assert</td>
+<td>断言表达式是否为真</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>捕捉异常</td>
+</tr>
+<tr>
+<td>finally</td>
+<td>有没有异常都执行</td>
+</tr>
+<tr>
+<td>throw</td>
+<td>抛出一个异常对象</td>
+</tr>
+<tr>
+<td>throws</td>
+<td>声明一个异常可能被抛出</td>
+</tr>
+<tr>
+<td>try</td>
+<td>捕获异常</td>
+</tr>
+<tr>
+<td align="center" rowspan="2">包相关</td>
+<td>import</td>
+<td>引入</td>
+</tr>
+<tr>
+<td>package</td>
+<td>包</td>
+</tr>
+<tr>
+<td align="center" rowspan="8">基本类型</td>
+<td>boolean</td>
+<td>布尔型</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>字节型</td>
+</tr>
+<tr>
+<td>char</td>
+<td>字符型</td>
+</tr>
+<tr>
+<td>double</td>
+<td>双精度浮点</td>
+</tr>
+<tr>
+<td>float</td>
+<td>单精度浮点</td>
+</tr>
+<tr>
+<td>int</td>
+<td>整型</td>
+</tr>
+<tr>
+<td>long</td>
+<td>长整型</td>
+</tr>
+<tr>
+<td>short</td>
+<td>短整型</td>
+</tr>
+<tr>
+<td align="center" rowspan="3">变量引用</td>
+<td>super</td>
+<td>父类,超类</td>
+</tr>
+<tr>
+<td>this</td>
+<td>本类</td>
+</tr>
+<tr>
+<td>void</td>
+<td>无返回值</td>
+</tr>
+<tr>
+<td align="center" rowspan="3">保留关键字</td>
+<td>goto</td>
+<td>是关键字，但不能使用</td>
+</tr>
+<tr>
+<td>const</td>
+<td>是关键字，但不能使用</td>
+</tr>
+</tbody></table><p><strong>注意：</strong>Java 的 null 不是关键字，类似于 true 和 false，它是一个字面常量，不允许作为标识符使用。</p><hr/>
+*******

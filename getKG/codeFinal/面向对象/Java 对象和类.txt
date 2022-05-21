@@ -1,0 +1,134 @@
+对象和类
+<p>
+
+下面的例子展示如何访问实例变量和调用成员方法：</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Puppy</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">puppyAge</span><span class="hl-code">;
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Puppy</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 这个构造器仅有一个参数：name</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">小狗的名字是 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">name</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">; 
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setAge</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-identifier">puppyAge</span><span class="hl-code"> = </span><span class="hl-identifier">age</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">getAge</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">小狗的年龄为 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">puppyAge</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">; 
+       </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">puppyAge</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">/*</span><span class="hl-comment"> 创建对象 </span><span class="hl-comment">*/</span><span class="hl-code">
+      </span><span class="hl-identifier">Puppy</span><span class="hl-code"> </span><span class="hl-identifier">myPuppy</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Puppy</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">tommy</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-comment">/*</span><span class="hl-comment"> 通过方法来设定age </span><span class="hl-comment">*/</span><span class="hl-code">
+      </span><span class="hl-identifier">myPuppy</span><span class="hl-code">.</span><span class="hl-identifier">setAge</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-comment">/*</span><span class="hl-comment"> 调用另一个方法获取age </span><span class="hl-comment">*/</span><span class="hl-code">
+      </span><span class="hl-identifier">myPuppy</span><span class="hl-code">.</span><span class="hl-identifier">getAge</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-comment">/*</span><span class="hl-comment">你也可以像下面这样访问成员变量 </span><span class="hl-comment">*/</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">变量值 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">myPuppy</span><span class="hl-code">.</span><span class="hl-identifier">puppyAge</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">; 
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>
+编译并运行上面的程序，产生如下结果：
+</p><pre>
+小狗的名字是 : tommy
+小狗的年龄为 : 2
+变量值 : 2
+</pre>
+*******
+对象和类
+<p>在该例子中，我们创建两个类：<strong>Employee</strong> 和 <strong>EmployeeTest</strong>。</p><p>
+首先打开文本编辑器，把下面的代码粘贴进去。注意将文件保存为 Employee.java。</p><p>
+Employee 类有四个成员变量：name、age、designation 和 salary。该类显式声明了一个构造方法，该方法只有一个参数。</p><div class="example">
+<h2 class="example">Employee.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+   </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">designation</span><span class="hl-code">;
+   </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">salary</span><span class="hl-code">;
+   </span><span class="hl-comment">//</span><span class="hl-comment"> Employee 类的构造器</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-comment">//</span><span class="hl-comment"> 设置age的值</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">empAge</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">empAge</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">age</span><span class="hl-code"> =  </span><span class="hl-identifier">empAge</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-comment">/*</span><span class="hl-comment"> 设置designation的值</span><span class="hl-comment">*/</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">empDesignation</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">empDesig</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">designation</span><span class="hl-code"> = </span><span class="hl-identifier">empDesig</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-comment">/*</span><span class="hl-comment"> 设置salary的值</span><span class="hl-comment">*/</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">empSalary</span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">empSalary</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">salary</span><span class="hl-code"> = </span><span class="hl-identifier">empSalary</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-comment">/*</span><span class="hl-comment"> 打印信息 </span><span class="hl-comment">*/</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">printEmployee</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">名字:</span><span class="hl-quotes">"</span><span class="hl-code">+ </span><span class="hl-identifier">name</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">年龄:</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">age</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">职位:</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">designation</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">薪水:</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">salary</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>程序都是从main方法开始执行。为了能运行这个程序，必须包含main方法并且创建一个实例对象。</p><p>下面给出EmployeeTest类，该类实例化2个 Employee 类的实例，并调用方法设置变量的值。</p><p>将下面的代码保存在 EmployeeTest.java文件中。</p><div class="example">
+<h2 class="example">EmployeeTest.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">EmployeeTest</span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">/*</span><span class="hl-comment"> 使用构造器创建两个对象 </span><span class="hl-comment">*/</span><span class="hl-code">
+      </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-identifier">empOne</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">JAVAKG1</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-identifier">empTwo</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">JAVAKG2</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 调用这两个对象的成员方法</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">empOne</span><span class="hl-code">.</span><span class="hl-identifier">empAge</span><span class="hl-brackets">(</span><span class="hl-number">26</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empOne</span><span class="hl-code">.</span><span class="hl-identifier">empDesignation</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">高级程序员</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empOne</span><span class="hl-code">.</span><span class="hl-identifier">empSalary</span><span class="hl-brackets">(</span><span class="hl-number">1000</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empOne</span><span class="hl-code">.</span><span class="hl-identifier">printEmployee</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-identifier">empTwo</span><span class="hl-code">.</span><span class="hl-identifier">empAge</span><span class="hl-brackets">(</span><span class="hl-number">21</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empTwo</span><span class="hl-code">.</span><span class="hl-identifier">empDesignation</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">菜鸟程序员</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empTwo</span><span class="hl-code">.</span><span class="hl-identifier">empSalary</span><span class="hl-brackets">(</span><span class="hl-number">500</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">empTwo</span><span class="hl-code">.</span><span class="hl-identifier">printEmployee</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>编译这两个文件并且运行 EmployeeTest 类，可以看到如下结果：</p><pre>
+$ javac EmployeeTest.java
+$ java EmployeeTest 
+名字:JAVAKG1
+年龄:26
+职位:高级程序员
+薪水:1000.0
+名字:JAVAKG2
+年龄:21
+职位:菜鸟程序员
+薪水:500.0
+</pre>
+*******
+对象和类
+<p>下面是一个创建对象的例子：</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Puppy</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Puppy</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment">这个构造器仅有一个参数：name</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">小狗的名字是 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">name</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">; 
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment"> 下面的语句将创建一个Puppy对象</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-identifier">Puppy</span><span class="hl-code"> </span><span class="hl-identifier">myPuppy</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Puppy</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">tommy</span><span class="hl-quotes">"</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>编译并运行上面的程序，会打印出下面的结果：</p><pre>
+小狗的名字是 : tommy
+</pre>
+*******

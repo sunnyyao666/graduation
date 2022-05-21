@@ -1,0 +1,71 @@
+Character类
+<p>Character 类用于对单个字符进行操作。</p><p>Character 类在对象中包装一个基本类型 <strong>char</strong> 的值</p><pre><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> Unicode 字符表示形式</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">uniChar</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-special">\u</span><span class="hl-string">039A</span><span class="hl-quotes">'</span><span class="hl-code">; 
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 字符数组</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-types">char</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">charArray</span><span class="hl-code"> =</span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">b</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">c</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">d</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">e</span><span class="hl-quotes">'</span><span class="hl-code"> </span><span class="hl-brackets">}</span><span class="hl-code">;</span></pre><p>然而，在实际开发过程中，我们经常会遇到需要使用对象，而不是内置数据类型的情况。为了解决这个问题，Java语言为内置数据类型char提供了包装类Character类。
+</p><p>
+Character类提供了一系列方法来操纵字符。你可以使用Character的构造方法创建一个Character类对象，例如：
+</p><pre><span class="hl-identifier">Character</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Character</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">;</span></pre><p>
+在某些情况下，Java编译器会自动创建一个Character对象。</p><hr/><h3>转义序列</h3><p>前面有反斜杠（\）的字符代表转义字符，它对编译器来说是有特殊含义的。
+</p><p>下面列表展示了Java的转义序列：</p><table class="reference">
+<tbody>
+<tr>
+<th>
+				转义序列</th>
+<th>
+				描述</th>
+</tr>
+<tr>
+<td>
+				\t</td>
+<td>
+				在文中该处插入一个tab键</td>
+</tr>
+<tr>
+<td>
+				\b</td>
+<td>
+				在文中该处插入一个后退键</td>
+</tr>
+<tr>
+<td>
+				\n</td>
+<td>
+				在文中该处换行</td>
+</tr>
+<tr>
+<td>
+				\r</td>
+<td>
+				在文中该处插入回车</td>
+</tr>
+<tr>
+<td>
+				\f</td>
+<td>
+				在文中该处插入换页符</td>
+</tr>
+<tr>
+<td>
+				\'</td>
+<td>
+				在文中该处插入单引号</td>
+</tr>
+<tr>
+<td>
+				\"</td>
+<td>
+				在文中该处插入双引号</td>
+</tr>
+<tr>
+<td>
+				\\</td>
+<td>
+				在文中该处插入反斜杠</td>
+</tr>
+</tbody>
+</table>
+*******

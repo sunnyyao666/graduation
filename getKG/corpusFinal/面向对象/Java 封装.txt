@@ -1,0 +1,36 @@
+Java封装
+<p>在面向对象程式设计方法中，封装（英语：Encapsulation）是指一种将抽象性函式接口的实现细节部分包装、隐藏起来的方法。
+</p><p>封装可以被认为是一个保护屏障，防止该类的代码和数据被外部类定义的代码随机访问。</p><p>
+要访问该类的代码和数据，必须通过严格的接口控制。</p><p>
+封装最主要的功能在于我们能修改自己的实现代码，而不用修改那些调用我们代码的程序片段。</p><p>
+适当的封装可以让程式码更容易理解与维护，也加强了程式码的安全性。</p><h3>封装的优点</h3><ul>
+<li><p>
+1. 良好的封装能够减少耦合。</p></li><li><p>
+2. 类内部的结构可以自由修改。</p></li><li><p>
+3. 可以对成员变量进行更精确的控制。</p></li><li><p>
+4. 隐藏信息，实现细节。</p></li></ul><hr/><h3>实现Java封装的步骤</h3><p>1. 修改属性的可见性来限制对属性的访问（一般限制为private），例如：</p><pre><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Person</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre><p>
+这段代码中，将 <strong>name</strong> 和 <strong>age</strong> 属性设置为私有的，只能本类才能访问，其他类都访问不了，如此就对信息进行了隐藏。
+</p><p>2. 对每个值属性提供对外的公共方法访问，也就是创建一对赋取值方法，用于对私有属性的访问，例如：</p><pre><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Person</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+​
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">getAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+​
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">getName</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+​
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setAge</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">age</span><span class="hl-code"> = </span><span class="hl-identifier">age</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+​
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setName</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">name</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></pre><p>采用 <strong>this</strong> 关键字是为了解决实例变量（private String name）和局部变量（setName(String name)中的name变量）之间发生的同名的冲突。</p><hr/>
+*******

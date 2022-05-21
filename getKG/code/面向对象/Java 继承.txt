@@ -1,0 +1,189 @@
+Java 继承
+<p>以下实例讨论继承的意义。</p><p>
+开发动物类，其中动物分别为企鹅以及老鼠，要求如下：</p><ul><li>
+企鹅：属性（姓名，id），方法（吃，睡，自我介绍）</li><li>
+老鼠：属性（姓名，id），方法（吃，睡，自我介绍）</li></ul><div class="example">
+<h2 class="example">企鹅类：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Penguin</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">; 
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">id</span><span class="hl-code">; 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Penguin</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code">  </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">myName</span><span class="hl-code">; 
+        </span><span class="hl-identifier">id</span><span class="hl-code"> = </span><span class="hl-identifier">myid</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">正在吃</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">sleep</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">正在睡</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">introduction</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">大家好！我是</span><span class="hl-quotes">"</span><span class="hl-code">         + </span><span class="hl-identifier">id</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">号</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">name</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">.</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><div class="example">
+<h2 class="example">老鼠类：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Mouse</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">; 
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">id</span><span class="hl-code">; 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Mouse</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code">  </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">myName</span><span class="hl-code">; 
+        </span><span class="hl-identifier">id</span><span class="hl-code"> = </span><span class="hl-identifier">myid</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">正在吃</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">sleep</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">正在睡</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">introduction</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">大家好！我是</span><span class="hl-quotes">"</span><span class="hl-code">         + </span><span class="hl-identifier">id</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">号</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">name</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">.</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>从这两段代码可以看出来，代码存在重复了，导致后果就是代码量大且臃肿，而且维护性不高(维护性主要是后期需要修改的时候，就需要修改很多的代码，容易出错)，所以要从根本上解决这两段代码的问题，就需要继承，将两段代码中相同的部分提取出来组成 一个父类：</p><div class="example">
+<h2 class="example">公共父类：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;  
+    </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">id</span><span class="hl-code">; 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">myName</span><span class="hl-code">; 
+        </span><span class="hl-identifier">id</span><span class="hl-code"> = </span><span class="hl-identifier">myid</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">正在吃</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">sleep</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">+</span><span class="hl-quotes">"</span><span class="hl-string">正在睡</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">introduction</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">大家好！我是</span><span class="hl-quotes">"</span><span class="hl-code">         + </span><span class="hl-identifier">id</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">号</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">name</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">.</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>这个Animal类就可以作为一个父类，然后企鹅类和老鼠类继承这个类之后，就具有父类当中的属性和方法，子类就不会存在重复的代码，维护性也提高，代码也更加简洁，提高代码的复用性（复用性主要是可以多次使用，不用再多次写同样的代码）
+继承之后的代码：</p><div class="example">
+<h2 class="example">企鹅类：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Penguin</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Penguin</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-reserved">super</span><span class="hl-brackets">(</span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><div class="example">
+<h2 class="example">老鼠类：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Mouse</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Mouse</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> 
+        </span><span class="hl-reserved">super</span><span class="hl-brackets">(</span><span class="hl-identifier">myName</span><span class="hl-code">, </span><span class="hl-identifier">myid</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-brackets">}</span><span class="hl-code"> 
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+Java 继承
+<p>super与this的使用</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">animal : eat</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">dog : eat</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">eatTest</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;   </span><span class="hl-comment">//</span><span class="hl-comment"> this 调用自己的方法</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-reserved">super</span><span class="hl-code">.</span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;  </span><span class="hl-comment">//</span><span class="hl-comment"> super 调用父类方法</span><span class="hl-comment"></span><span class="hl-code">
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">Animal</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Animal</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">a</span><span class="hl-code">.</span><span class="hl-identifier">eat</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">Dog</span><span class="hl-code"> </span><span class="hl-identifier">d</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Dog</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">d</span><span class="hl-code">.</span><span class="hl-identifier">eatTest</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>输出结果为：</p><pre>
+animal : eat
+dog : eat
+animal : eat
+</pre>
+*******
+Java 继承
+<p>下面是构造器的实例。</p><div class="example">
+<h2 class="example">实例</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">SuperClass</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">n</span><span class="hl-code">;
+  </span><span class="hl-identifier">SuperClass</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">SuperClass()</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-identifier">SuperClass</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">n</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">SuperClass(int n)</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">n</span><span class="hl-code"> = </span><span class="hl-identifier">n</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-comment">//</span><span class="hl-comment"> SubClass 类继承</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">SubClass</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">SuperClass</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">n</span><span class="hl-code">;
+  
+  </span><span class="hl-identifier">SubClass</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-comment">//</span><span class="hl-comment"> 自动调用父类的无参数构造器</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">SubClass</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">  
+  
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">SubClass</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">n</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> 
+    </span><span class="hl-reserved">super</span><span class="hl-brackets">(</span><span class="hl-number">300</span><span class="hl-brackets">)</span><span class="hl-code">;  </span><span class="hl-comment">//</span><span class="hl-comment"> 调用父类中带有参数的构造器</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">SubClass(int n):</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">n</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">n</span><span class="hl-code"> = </span><span class="hl-identifier">n</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-comment">//</span><span class="hl-comment"> SubClass2 类继承</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">SubClass2</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">SuperClass</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">n</span><span class="hl-code">;
+  
+  </span><span class="hl-identifier">SubClass2</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">super</span><span class="hl-brackets">(</span><span class="hl-number">300</span><span class="hl-brackets">)</span><span class="hl-code">;  </span><span class="hl-comment">//</span><span class="hl-comment"> 调用父类中带有参数的构造器</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">SubClass2</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">  
+  
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">SubClass2</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">n</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-comment">//</span><span class="hl-comment"> 自动调用父类的无参数构造器</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">SubClass2(int n):</span><span class="hl-quotes">"</span><span class="hl-code">+</span><span class="hl-identifier">n</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">n</span><span class="hl-code"> = </span><span class="hl-identifier">n</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">TestSuperSub</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-code"> </span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">------SubClass 类继承------</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">SubClass</span><span class="hl-code"> </span><span class="hl-identifier">sc1</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">SubClass</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">SubClass</span><span class="hl-code"> </span><span class="hl-identifier">sc2</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">SubClass</span><span class="hl-brackets">(</span><span class="hl-number">100</span><span class="hl-brackets">)</span><span class="hl-code">; 
+    </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">------SubClass2 类继承------</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">SubClass2</span><span class="hl-code"> </span><span class="hl-identifier">sc3</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">SubClass2</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">SubClass2</span><span class="hl-code"> </span><span class="hl-identifier">sc4</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">SubClass2</span><span class="hl-brackets">(</span><span class="hl-number">200</span><span class="hl-brackets">)</span><span class="hl-code">; 
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>输出结果为：</p><pre>
+------SubClass 类继承------
+SuperClass()
+SubClass
+SuperClass(int n)
+SubClass(int n):100
+------SubClass2 类继承------
+SuperClass(int n)
+SubClass2
+SuperClass()
+SubClass2(int n):200
+</pre>
+*******

@@ -1,0 +1,142 @@
+抽象类
+<p>在 Java 语言中使用 abstract class 来定义抽象类。如下实例：</p><div class="example">
+<h2 class="example">Employee.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> 文件名 : Employee.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">abstract</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">address</span><span class="hl-code">;
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">, </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">address</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Constructing an Employee</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">name</span><span class="hl-code">;
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">address</span><span class="hl-code"> = </span><span class="hl-identifier">address</span><span class="hl-code">;
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">number</span><span class="hl-code"> = </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">computePay</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Inside Employee computePay</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+     </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-number">.0</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">mailCheck</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Mailing a check to </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">name</span><span class="hl-code">
+       + </span><span class="hl-quotes">"</span><span class="hl-string"> </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">address</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">toString</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">address</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string"> </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">getName</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">getAddress</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">address</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setAddress</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">newAddress</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">address</span><span class="hl-code"> = </span><span class="hl-identifier">newAddress</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">getNumber</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+     </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>注意到该 Employee 类没有什么不同，尽管该类是抽象类，但是它仍然有 3 个成员变量，7 个成员方法和 1 个构造方法。
+现在如果你尝试如下的例子：</p><div class="example">
+<h2 class="example">AbstractDemo.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> 文件名 : AbstractDemo.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">AbstractDemo</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">/*</span><span class="hl-comment"> 以下是不允许的，会引发错误 </span><span class="hl-comment">*/</span><span class="hl-code">
+      </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-identifier">e</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">George W.</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-quotes">"</span><span class="hl-string">Houston, TX</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-number">43</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-string"> Call mailCheck using Employee reference--</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">e</span><span class="hl-code">.</span><span class="hl-identifier">mailCheck</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>当你尝试编译 AbstractDemo 类时，会产生如下错误：</p><pre>
+Employee.java:46: Employee is abstract; cannot be instantiated
+      Employee e = new Employee("George W.", "Houston, TX", 43);
+                   ^
+1 error
+</pre>
+*******
+抽象类
+<p>我们可以通过以下方式继承 Employee 类的属性：</p><div class="example">
+<h2 class="example">Salary.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> 文件名 : Salary.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Salary</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Employee</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">salary</span><span class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment">Annual salary</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Salary</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">, </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">address</span><span class="hl-code">, </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-code">, </span><span class="hl-types">double</span><span class="hl-code">
+      </span><span class="hl-identifier">salary</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">super</span><span class="hl-brackets">(</span><span class="hl-identifier">name</span><span class="hl-code">, </span><span class="hl-identifier">address</span><span class="hl-code">, </span><span class="hl-identifier">number</span><span class="hl-brackets">)</span><span class="hl-code">;
+       </span><span class="hl-identifier">setSalary</span><span class="hl-brackets">(</span><span class="hl-identifier">salary</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">mailCheck</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Within mailCheck of Salary class </span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Mailing check to </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">getName</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+       + </span><span class="hl-quotes">"</span><span class="hl-string"> with salary </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">salary</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">getSalary</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">salary</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setSalary</span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">newSalary</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-identifier">newSalary</span><span class="hl-code"> &gt;= </span><span class="hl-number">0</span><span class="hl-number">.0</span><span class="hl-brackets">)</span><span class="hl-code">
+       </span><span class="hl-brackets">{</span><span class="hl-code">
+          </span><span class="hl-identifier">salary</span><span class="hl-code"> = </span><span class="hl-identifier">newSalary</span><span class="hl-code">;
+       </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">computePay</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Computing salary pay for </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">getName</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">salary</span><span class="hl-code">/</span><span class="hl-number">52</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>尽管我们不能实例化一个 Employee 类的对象，但是如果我们实例化一个 Salary 类对象，该对象将从 Employee 类继承 7 个成员方法，且通过该方法可以设置或获取三个成员变量。</p><div class="example">
+<h2 class="example">AbstractDemo.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> 文件名 : AbstractDemo.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">AbstractDemo</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">Salary</span><span class="hl-code"> </span><span class="hl-identifier">s</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Salary</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Mohd Mohtashim</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-quotes">"</span><span class="hl-string">Ambehta, UP</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-number">3</span><span class="hl-code">, </span><span class="hl-number">3600</span><span class="hl-number">.00</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">Employee</span><span class="hl-code"> </span><span class="hl-identifier">e</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Salary</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">John Adams</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-quotes">"</span><span class="hl-string">Boston, MA</span><span class="hl-quotes">"</span><span class="hl-code">, </span><span class="hl-number">2</span><span class="hl-code">, </span><span class="hl-number">2400</span><span class="hl-number">.00</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Call mailCheck using Salary reference --</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">s</span><span class="hl-code">.</span><span class="hl-identifier">mailCheck</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-string"> Call mailCheck using Employee reference--</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">e</span><span class="hl-code">.</span><span class="hl-identifier">mailCheck</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上程序编译运行结果如下：</p><pre>
+Constructing an Employee
+Constructing an Employee
+Call mailCheck using  Salary reference --
+Within mailCheck of Salary class
+Mailing check to Mohd Mohtashim with salary 3600.0
+
+Call mailCheck using Employee reference--
+Within mailCheck of Salary class
+Mailing check to John Adams with salary 2400.
+</pre>
+*******

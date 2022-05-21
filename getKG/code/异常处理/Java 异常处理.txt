@@ -1,0 +1,180 @@
+捕获异常
+<p>下面的例子中声明有两个元素的一个数组，当代码试图访问数组的第四个元素的时候就会抛出一个异常。</p><div class="example">
+<h2 class="example">ExcepTest.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">//</span><span class="hl-comment"> 文件名 : ExcepTest.java</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">ExcepTest</span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">try</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-brackets">[</span><span class="hl-number">2</span><span class="hl-brackets">]</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Access element three :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">a</span><span class="hl-brackets">[</span><span class="hl-number">3</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">catch</span><span class="hl-brackets">(</span><span class="hl-identifier">ArrayIndexOutOfBoundsException</span><span class="hl-code"> </span><span class="hl-identifier">e</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Exception thrown  :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">e</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Out of the block</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行输出结果如下：</p><pre>
+Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
+Out of the block
+</pre>
+*******
+捕获异常
+<p>
+该实例展示了怎么使用多重 try/catch。
+</p><div class="example">
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">try</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">file</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">FileInputStream</span><span class="hl-brackets">(</span><span class="hl-identifier">fileName</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">x</span><span class="hl-code"> = </span><span class="hl-brackets">(</span><span class="hl-types">byte</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-identifier">file</span><span class="hl-code">.</span><span class="hl-identifier">read</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code"> </span><span class="hl-reserved">catch</span><span class="hl-brackets">(</span><span class="hl-identifier">FileNotFoundException</span><span class="hl-code"> </span><span class="hl-identifier">f</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-comment">//</span><span class="hl-comment"> Not valid!</span><span class="hl-comment"></span><span class="hl-code">
+    </span><span class="hl-identifier">f</span><span class="hl-code">.</span><span class="hl-identifier">printStackTrace</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">return</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span><span class="hl-code"> </span><span class="hl-reserved">catch</span><span class="hl-brackets">(</span><span class="hl-identifier">IOException</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-identifier">i</span><span class="hl-code">.</span><span class="hl-identifier">printStackTrace</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-reserved">return</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div>
+*******
+捕获异常
+<p>finally实例</p><div class="example">
+<h2 class="example">ExcepTest.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">ExcepTest</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-brackets">[</span><span class="hl-number">2</span><span class="hl-brackets">]</span><span class="hl-code">;
+    </span><span class="hl-reserved">try</span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Access element three :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">a</span><span class="hl-brackets">[</span><span class="hl-number">3</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-reserved">catch</span><span class="hl-brackets">(</span><span class="hl-identifier">ArrayIndexOutOfBoundsException</span><span class="hl-code"> </span><span class="hl-identifier">e</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Exception thrown  :</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">e</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-reserved">finally</span><span class="hl-brackets">{</span><span class="hl-code">
+       </span><span class="hl-identifier">a</span><span class="hl-brackets">[</span><span class="hl-number">0</span><span class="hl-brackets">]</span><span class="hl-code"> = </span><span class="hl-number">6</span><span class="hl-code">;
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">First element value: </span><span class="hl-quotes">"</span><span class="hl-code"> +</span><span class="hl-identifier">a</span><span class="hl-brackets">[</span><span class="hl-number">0</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code">;
+       </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">The finally statement is executed</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
+First element value: 6
+The finally statement is executed
+</pre>
+*******
+自定义异常
+<p>以下实例是一个银行账户的模拟，通过银行卡的号码完成识别，可以进行存钱和取钱的操作。</p><div class="example">
+<h2 class="example">InsufficientFundsException.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">//</span><span class="hl-comment"> 文件名InsufficientFundsException.java</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment">自定义异常类，继承Exception类</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">InsufficientFundsException</span><span class="hl-code"> </span><span class="hl-reserved">extends</span><span class="hl-code"> </span><span class="hl-identifier">Exception</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-comment">//</span><span class="hl-comment">此处的amount用来储存当出现异常（取出钱多于余额时）所缺乏的钱</span><span class="hl-comment"></span><span class="hl-code">
+  </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">amount</span><span class="hl-code">;
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">InsufficientFundsException</span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">amount</span><span class="hl-brackets">)</span><span class="hl-code">
+  </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">amount</span><span class="hl-code"> = </span><span class="hl-identifier">amount</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code"> 
+  </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">getAmount</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+  </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">amount</span><span class="hl-code">;
+  </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>为了展示如何使用我们自定义的异常类，
+</p><p>在下面的 CheckingAccount 类中包含一个 withdraw() 方法抛出一个 InsufficientFundsException 异常。
+</p><div class="example">
+<h2 class="example">CheckingAccount.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">//</span><span class="hl-comment"> 文件名称 CheckingAccount.java</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">java</span><span class="hl-code">.</span><span class="hl-identifier">io</span><span class="hl-code">.*;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment">此类模拟银行账户</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">CheckingAccount</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+  </span><span class="hl-comment">//</span><span class="hl-comment">balance为余额，number为卡号</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">balance</span><span class="hl-code">;
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">CheckingAccount</span><span class="hl-brackets">(</span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">this</span><span class="hl-code">.</span><span class="hl-identifier">number</span><span class="hl-code"> = </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-comment">//</span><span class="hl-comment">方法：存钱</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">deposit</span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">amount</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">balance</span><span class="hl-code"> += </span><span class="hl-identifier">amount</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-comment">//</span><span class="hl-comment">方法：取钱</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">withdraw</span><span class="hl-brackets">(</span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">amount</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-reserved">throws</span><span class="hl-code">
+                              </span><span class="hl-identifier">InsufficientFundsException</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-identifier">amount</span><span class="hl-code"> &lt;= </span><span class="hl-identifier">balance</span><span class="hl-brackets">)</span><span class="hl-code">
+      </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">balance</span><span class="hl-code"> -= </span><span class="hl-identifier">amount</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-reserved">else</span><span class="hl-code">
+      </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">needs</span><span class="hl-code"> = </span><span class="hl-identifier">amount</span><span class="hl-code"> - </span><span class="hl-identifier">balance</span><span class="hl-code">;
+         </span><span class="hl-reserved">throw</span><span class="hl-code"> </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">InsufficientFundsException</span><span class="hl-brackets">(</span><span class="hl-identifier">needs</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-comment">//</span><span class="hl-comment">方法：返回余额</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">double</span><span class="hl-code"> </span><span class="hl-identifier">getBalance</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">balance</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+  </span><span class="hl-comment">//</span><span class="hl-comment">方法：返回卡号</span><span class="hl-comment"></span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">getNumber</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">number</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>
+下面的 BankDemo 程序示范了如何调用 CheckingAccount 类的 deposit() 和 withdraw() 方法。
+</p><div class="example">
+<h2 class="example">BankDemo.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">//</span><span class="hl-comment">文件名称 BankDemo.java</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">BankDemo</span><span class="hl-code">
+</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code">
+   </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">CheckingAccount</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">CheckingAccount</span><span class="hl-brackets">(</span><span class="hl-number">101</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Depositing $500...</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">deposit</span><span class="hl-brackets">(</span><span class="hl-number">500</span><span class="hl-number">.00</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-reserved">try</span><span class="hl-code">
+      </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-string">Withdrawing $100...</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">withdraw</span><span class="hl-brackets">(</span><span class="hl-number">100</span><span class="hl-number">.00</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-special">\n</span><span class="hl-string">Withdrawing $600...</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">c</span><span class="hl-code">.</span><span class="hl-identifier">withdraw</span><span class="hl-brackets">(</span><span class="hl-number">600</span><span class="hl-number">.00</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-reserved">catch</span><span class="hl-brackets">(</span><span class="hl-identifier">InsufficientFundsException</span><span class="hl-code"> </span><span class="hl-identifier">e</span><span class="hl-brackets">)</span><span class="hl-code">
+      </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Sorry, but you are short $</span><span class="hl-quotes">"</span><span class="hl-code">
+                                  + </span><span class="hl-identifier">e</span><span class="hl-code">.</span><span class="hl-identifier">getAmount</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-identifier">e</span><span class="hl-code">.</span><span class="hl-identifier">printStackTrace</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>编译上面三个文件，并运行程序 BankDemo，得到结果如下所示：
+</p><pre>
+Depositing $500...
+
+Withdrawing $100...
+
+Withdrawing $600...
+Sorry, but you are short $200.0
+InsufficientFundsException
+        at CheckingAccount.withdraw(CheckingAccount.java:25)
+        at BankDemo.main(BankDemo.java:13)
+</pre>
+*******

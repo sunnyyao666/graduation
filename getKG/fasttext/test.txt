@@ -1,0 +1,304 @@
+__label__构造方法 __label__对象和类 __label__类变量（静态变量） __label__访问控制修饰符 中 使用 访问控制符 保护 类变量 方法 构造方法 访问
+__label__Java多态 __label__Java接口 __label__Java方法 __label__访问控制修饰符 使用 对象 类 接口 变量 方法
+__label__Java方法 __label__访问控制修饰符 使用 对象 变量 方法
+__label__Java方法 __label__访问控制修饰符 使用 对象 变量 方法
+__label__对象和类 __label__Java接口 __label__Java多态 __label__访问控制修饰符 __label__构造方法 私有访问修饰符 严格 访问 级别 声明  private  方法 变量 构造方法 只能 所属 类 访问 类 接口 不能 声明  private
+__label__Java方法 __label__访问控制修饰符 声明 私有 访问 类型 变量 只能 类中 公共  getter  方法 外 部类 访问
+__label__非访问修饰符 __label__Java方法 __label__类变量（静态变量） 静态方法 不能 使用 类 非 静态变量
+__label__非访问修饰符 __label__Java继承 final  表示 最后 最终 含义 变量 赋值 不能 重新 赋值
+__label__非访问修饰符 __label__抽象类 __label__Java多态 抽象类 不能 实例 化 对象 声明 抽象类 唯一 目的 将来 该类 进行 扩充
+__label__非访问修饰符 __label__抽象类 __label__Java包(package) __label__Java多态 一个 类 包含 若干个 抽象方法 该类 必须 声明 抽象类
+__label__Java局部变量 访问 修饰符 不能 用于 局部变量
+__label__实例变量 实例变量 对象 创建 创建 对象 销毁 销毁
+__label__实例变量 实例变量 声明 使用 前 使用
+__label__构造方法 __label__对象和类 __label__实例变量 实例变量 类中 方法 构造方法 语句 块
+__label__实例变量 情况 应该 实例变量 设 私有
+__label__Java方法 __label__实例变量 静态方法 类中 应该 使用 完全 限定 名 ObejectReference VariableName
+__label__非访问修饰符 __label__Java方法 __label__类变量（静态变量） __label__Java关键字 类变量 称为 静态变量 类 中以  static  关键字 声明 必须 方法 之外
+__label__Java常量 __label__Java继承 __label__类变量（静态变量） __label__非访问修饰符 __label__访问控制修饰符 静态变量 声明 常量 外 很少 使用 静态变量 指 声明  public private final   static  类型 变量
+__label__类变量（静态变量） 静态变量 储存 静态 存储 区
+__label__非访问修饰符 __label__Java常量 __label__类变量（静态变量） 经常 声明 常量 很少 单独 使用  static  声明 变量
+__label__类变量（静态变量） __label__访问控制修饰符 对类 使用者 大多数 静态变量 声明  public  类型
+__label__Java继承 __label__类变量（静态变量） __label__非访问修饰符 __label__访问控制修饰符 __label__Java局部变量 __label__实例变量 静态变量  public   final  类型 命名 方式 实例变量 局部变量 命名 方式 一致
+__label__内置数据类型 byte
+__label__内置数据类型 最大值  127 ^ -
+__label__内置数据类型 默认值 
+__label__内置数据类型 最大值  32767 ^ 15  - 
+__label__内置数据类型 例子 short  s   1000short  r   - 20000
+__label__内置数据类型 最大值  , 147 , 483 , 647 ^ 31  - 
+__label__内置数据类型 默认值 
+__label__内置数据类型 最小值  - , 223 , 372 , 036 , 854 , 775 , 808 - ^ 63
+__label__内置数据类型 最大值  , 223 , 372 , 036 , 854 , 775 , 807 ^ 63  -
+__label__内置数据类型 这种 类型 主要 使用 需要 比较 整数 系统
+__label__内置数据类型 默认值  0L
+__label__内置数据类型 double
+__label__内置数据类型 浮点数 默认 类型  double  类型
+__label__内置数据类型 double 类型 同样 不能 表示 精确 值 货币
+__label__内置数据类型 默认值  false
+__label__内置数据类型 char  类型 一个 单一  16  位  Unicode  字符
+__label__内置数据类型 最小值  \ u0000 十进制 等效值 
+__label__内置数据类型 char  数据类型 储存 字符
+__label__内置数据类型 数据类型  byte  默认值 
+__label__内置数据类型 数据类型  int  默认值 
+__label__内置数据类型 数据类型  double  默认值  0.0 d
+__label__内置数据类型 数据类型  char  默认值  u0000
+__label__引用类型 中 引用类型 变量 非常 类似 C C++ 指针
+__label__引用类型 引用类型 指向 一个 对象 指向 对象 变量 引用 变量
+__label__数组 __label__引用类型 对象 数组 引用 数据类型
+__label__引用类型 引用类型 默认值 null
+__label__Java常量 常量 程序运行 时 不能 修改
+__label__Java常量 byteintlong short 十进制 16 进制 进制 方式 表示
+__label__Java常量 使用 字面 量 前缀   表示   进制 前缀  0x  代表  16  进制 , 
+__label__Java常量 符号  \ r  字符 含义  回车  0x0d
+__label__Java常量 符号  \ s  字符 含义  空格  0x20
+__label__Java常量 符号  \ t  字符 含义  制表符
+__label__Java常量 符号  \  字符 含义  单引号
+__label__Java常量 __label__自动类型转换 整型 实型 常量 字符 型 数据 混合 运算
+__label__自动类型转换  不能 对象 类型转换 成 相关 类 对象
+__label__自动类型转换  容量 类型转换 容量 类型 时 必须 使用 强制类型转换
+__label__自动类型转换  转换 过程 中 可能 导致 溢出 损失 精度
+__label__自动类型转换  浮点数 整数 转换 舍弃 小数 得到 四舍五入
+__label__Java基础语法 大小写 敏感  大小写 敏感 意味着 标识符  Hello   hello  不同
+__label__Java方法 __label__Java基础语法 类名 变量名 方法 名 称为 标识符
+__label__Java基础语法 标识符 应该 字母 A - Z   a - z , 美元 符 下划线
+__label__Java基础语法 __label__Java关键字 关键字 不能 用作 标识符
+__label__Java基础语法 合法 标识符 举例 age salary value __ value
+__label__Java方法 __label__Java基础语法 语言 使用 修饰符 修饰 类中 方法 属性
+__label__Java基础语法 中 主要 几种 类型 变量
+__label__Java局部变量 __label__Java基础语法 局部变量
+__label__Java常量 __label__Java关键字 保留字 不能 用于 常量 变量 标识符 名称
+__label__访问控制修饰符 __label__Java关键字 类别  访问控制  关键字  private  说明  私有
+__label__Java关键字 类别  default  关键字  默认
+__label__Java继承 __label__Java关键字 类别  extends  关键字  扩充 , 继承
+__label__非访问修饰符 __label__Java继承 __label__Java关键字 类别  final  关键字  最终 值 , 不可 改变
+__label__Java多态 __label__Java接口 __label__Java关键字 类别  interface  关键字  接口
+__label__Java方法 __label__Java关键字 类别  native  关键字  原生 方法 非   实现
+__label__Java关键字 类别  strictfp  关键字  严格 , 精准
+__label__Java关键字 类别  synchronized  关键字  线程 , 同步
+__label__Java关键字 类别  transient  关键字  短暂
+__label__Java关键字 类别  程序控制 语句  关键字  break  说明  跳出 循环
+__label__if-else语句 __label__Java关键字 类别  else  关键字 
+__label__Java关键字 类别  instanceof  关键字  实例
+__label__Java关键字 类别  while  关键字  循环
+__label__Java异常 __label__Java关键字 类别  catch  关键字  捕捉 异常
+__label__捕获异常 __label__Java关键字 类别  try  关键字  捕获异常
+__label__Java包(package) __label__Java关键字 类别  包 相关  关键字  import  说明  引入
+__label__Java关键字 类别  double  关键字  双 精度 浮点
+__label__Java关键字 类别  short  关键字  短 整型
+__label__Java关键字 类别  const  关键字  关键字 不能 使用
+__label__Character类 __label__内置数据类型 __label__Java包(package) 解决 问题 语言 内置数据类型 char 提供 包装 类 Character类
+__label__Character类 __label__Java方法 Character类 提供 一系列 方法 操纵 字符
+__label__Character类 情况 编译器 会 自动 创建 一个 Character 对象
+__label__Character类 前面 反 斜杠 \ 字符 代表 转义字符 编译器 特殊 含义
+__label__Character类 转义序列  \ b  描述  文中 该处 插入 一个 后退 键
+__label__Character类 转义序列  \ n  描述  文中 该处 换行
+__label__Character类 转义序列  \ r  描述  文中 该处 插入 回车
+__label__Character类 转义序列  \  描述  文中 该处 插入 单引号
+__label__Character类 转义序列  \ \  描述  文中 该处 插入 反 斜杠
+__label__String类 创建字符串 简单 方式
+__label__Java方法 __label__String类 用于 获取 对象 信息 方法 称为 访问 器 方法
+__label__Java方法 __label__Java包(package) __label__String类 String  类 一个 访问 器 方法  length  方法 返回 字符串 对象 包含 字符 数
+__label__String类 返回  string2  连接  string1  新 字符串
+__label__Java异常 异常 程序 中 错误 错误 异常 错误 有时候 避免
+__label__Java异常 比如说 代码 少 一个 分 号 运行 提示 错误  java lang Error System out println 11 是因为 做 除数 会 抛出  java lang ArithmeticException  异常
+__label__Java包(package) __label__Java异常 异常 发生 原因 很多 通常 包含 以下 几大类
+__label__Java异常 用户 输入 非法 数据
+__label__Java异常 打开 文件 存在
+__label__Java异常 -
+__label__Java异常 打开 一个 存在 文件 时 一个 异常 发生 异常 编译 时 不能 简单 忽略
+__label__Java异常 错误  错误 异常 脱离 程序员 控制 问题
+__label__Java异常 Error  指示 运行 时 环境 发生 错误
+__label__Java异常 程序 不会 错误 中 恢复
+__label__Java方法 __label__Java异常 __label__访问控制修饰符 序号   方法 说明  public  Throwable  getCause     返回 一个  Throwable  对象 代表 异常 原因
+__label__Java方法 __label__Java异常 __label__访问控制修饰符 序号   方法 说明  public  String  toString     返回  Throwable  简短 描述
+__label__Java方法 __label__Java异常 __label__访问控制修饰符 序号   方法 说明  public  void  printStackTrace      Throwable  回溯 打印 标准 错误 流
+__label__Java包(package) __label__Java异常 __label__Java方法 __label__访问控制修饰符 __label__数组 序号   方法 说明  public  StackTraceElement  [ ]  getStackTrace     返回 一个 包含 堆栈 层次 数组 下标 元素 代表 栈顶 最后 一个 元素 代表 方法调用 堆栈 栈底
+__label__Java方法 __label__Java异常 __label__访问控制修饰符 序号   方法 说明  public  Throwable  fillInStackTrace     当前 调用 栈 层次 填充 Throwable  对象 栈 层次 添加 栈 层次 先前 信息 中
+__label__Java异常  IllegalArgumentException  类 IllegalStateException  类
+__label__Java包(package) __label__捕获异常 上面 代码段 包含    catch 块
+__label__捕获异常  try  语句 后面 添加 任意 数量  catch  块
+__label__Java异常 __label__捕获异常 保护 代码 中 发生 异常 异常 抛 第一个  catch  块
+__label__Java异常 __label__捕获异常 异常 捕获  catch  块
+__label__Java方法 __label__Java异常 __label__捕获异常 下面 方法 声明 抛出 一个  RemoteException  异常
+__label__Java关键字 __label__捕获异常 finally  关键字 创建  try  代码 块 后面 执行 代码 块
+__label__自定义异常 __label__Java异常 编写 异常 类时 需要 记住 下面 几点
+__label__Java继承 __label__自定义异常 __label__Java异常 继承 Exception  类来 创建 异常 类 检查 性 异常 类
+__label__Java方法 __label__Java包(package) __label__自定义异常 __label__Java异常 一个 异常 类 类 包含 变量 方法
+__label__do…while循环  while  语句 满足条件 不能 进入 循环
+__label__for循环 for循环 执行 次数 执行 前 确定
+__label__for循环  true 循环体 执行
+__label__for循环 执行 一次 循环 更新 循环 控制变量
+__label__for循环 再次 检测 布尔 表达式
+__label__数组 __label__Java局部变量 __label__foreach循环 声明 语句 声明 新 局部变量 变量 类型 必须 数组 元素 类型 匹配
+__label__数组 __label__Java方法 __label__foreach循环 表达式 表达式 访问 数组名 返回值 数组 方法
+__label__ArrayList __label__数组 ArrayList  类 一个 动态 修改 数组 普通 数组 区别 没有 固定 大小 限制 添加 删除 元素
+__label__ArrayList E  泛型 数据类型 用于 设置  objectName  数据类型 只能 引用 数据类型
+__label__ArrayList objectName  对象 名
+__label__Java多态 __label__Java继承 __label__Java接口 __label__HashMap HashMap  继承 AbstractMap 实现  MapCloneablejava io Serializable  接口
+__label__Java包(package) __label__HashMap HashMap  类 位于  java util  包中 使用 前 需要 引入 语法 格式
+__label__HashSet 必须 多线程 访问 时 显式 同步  HashSet  并发 访问
+__label__HashSet 以下 实例 创建 一个  HashSet  对象  sites 用于 保存 字符串 元素
+__label__ArrayList __label__LinkedList LinkedList 链表  类似  ArrayList 一种 常用 数据 容器
+__label__LinkedList 需要 列表 末尾 进行 添加 删除 元素 操作
+__label__LinkedList 需要 频繁 列表 开头 中间 末尾 位置 进行 添加 删除 元素 操作
+__label__Java继承 __label__LinkedList LinkedList  继承  AbstractSequentialList  类
+__label__数组 __label__Java集合框架（Collection） 基本 集合 动态 数组 链表 树 哈希 表 实现 必须 高效
+__label__ArrayList __label__HashSet __label__Java接口 __label__HashMap __label__Java多态 __label__Java集合框架（Collection） __label__抽象类 __label__LinkedList Collection  接口   种子 类型 ListSet   Queue 下面 抽象类 最后 具体 实现 类 常用  ArrayList LinkedList HashSet Linked HashSet HashMap Linked HashMap 
+__label__Java多态 __label__Java接口 __label__Java集合框架（Collection） 集合 框架 定义 几个  Map  接口 类
+__label__Java集合框架（Collection）  Map  集合 完全 整合 集合 中
+__label__Java多态 __label__Java接口 __label__Java集合框架（Collection） 集合框架 定义 接口
+__label__Java多态 __label__Java接口 __label__Java集合框架（Collection） 序号   接口 描述  MapMap  接口 存储 一组 键值 对象 提供 key 键 value 值 映射
+__label__Java多态 __label__Java方法 __label__Java接口 __label__Java集合框架（Collection） 序号   接口 描述  Enumeration 这是 一个 传统 接口 定义 方法 枚举 一次 获得 一个 对象 集合 中 元素 传统 接口 迭代 器 取代
+__label__Java多态 __label__Java接口 __label__Java集合框架（Collection）  Set  接口 实例 存储 无序 重复 数据
+__label__Java多态 __label__Java接口 __label__Java包(package) __label__Java集合框架（Collection） 集合框架 类 接口 均 java util 包中
+__label__数组 语言 中 提供 数组 存储 固定 大小 类型 元素
+__label__数组 数组 函数 参数 返回值 使用
+__label__数组 注意  建议 使用  dataType [ ]  arrayRefVar  声明 风格 声明数组变量
+__label__数组 语言 使用 new 操作符 创建数组 语法
+__label__数组 上面 语法 语句 做 两件事
+__label__数组 使用  dataType [ arraySize ]  创建 一个 数组
+__label__数组 数组 变量 声明 创建数组 一条 语句 完成 所示
+__label__数组 数组 索引   索引 值    arrayRefVar length -
+__label__数组 数组 元素 类型 数组 大小 确定 处理数组 元素 通常 使用 基本 循环  For - Each  循环
+__label__多维数组 多维数组 看成 数组 数组 二维 数组 一个 特殊 一维 数组 一个 元素 一个 一维 数组
+__label__多维数组 type  基本 数据类型 复合 数据类型 typeLength1   typeLength2  必须 正整数 typeLength1  行数 typeLength2  列数
+__label__多维数组 解析
+__label__数组 __label__多维数组 s [ ] new  String [ ]   s [ ] new  String [ ]  最高 维 分配 引用 空间 最高 维 限制 其能 保存 数据 最长 长度 每个 数组 元素 单独 分配 空间  s0 new  String Good  操作
+__label__数组 __label__Arrays类 __label__Java方法 查找 数组 元素  binarySearch  方法 排序 数组 进行 二分 查找 法 操作
+__label__Arrays类 具体 说明 请 查看 下表
+__label__Java包(package) __label__非访问修饰符 __label__Arrays类 __label__Java方法 __label__访问控制修饰符 __label__数组 序号   方法 说明  public  static  int  binarySearch Object [ ]  a ,  Object  key     二分 查找 算法 给定 数组 中 搜索 给定 值 对象 Byte , Int , double 数组 调用 前 必须 排序 查找 值 包含 数组 中则 返回 搜索 键 索引 返回  - 插入 点  - 
+__label__非访问修饰符 __label__Arrays类 __label__Java方法 __label__访问控制修饰符 __label__数组 序号   方法 说明  public  static  void  fill int [ ]  a ,  int  val     指定  int  值 分配 指定  int  型 数组 指定 范围 中 每个 元素 同样 方法 适用 基本 数据类型 ByteshortInt
+__label__Java方法 方法 语句 集合 一起 执行 一个 功能
+__label__Java方法 方法 程序 中 创建 地方 引用
+__label__Java方法  程序 变得 更 简短 清晰
+__label__Java方法 方法 名字 第一个 单词 应 小写字母 开头 后面 单词 大写字母 开头 写 使用 连接符
+__label__Java方法 下划线 可能 出现  JUnit  测试方法 名称 中 用以 分隔 名称 逻辑 组件
+__label__Java方法 下面 一个 方法 部分
+__label__Java方法 方法 名 参数表 共同 构成 方法 签名
+__label__Java方法 值 称为 实参 变量
+__label__Java方法 参数 列表 指 方法 参数 类型 顺序 参数 个数
+__label__Java方法 __label__Java包(package) 方法 体 方法 体 包含 具体 语句 定义 方法 功能
+__label__Java方法 注意  语言 中 方法 指 过程 函数
+__label__Java方法 方法 返回 一个 值 方法调用 通常 当做 一个 值
+__label__Java方法 
+__label__Java方法 方法 返回值 void 方法调用 一定 一条 语句
+__label__Java方法 变量 范围 程序 中该 变量 引用 部分
+__label__Java方法 __label__Java局部变量 局部变量 必须 声明 使用
+__label__Java方法 __label__for循环 for循环 初始化 部分 声明 变量 作用 范围 整个 循环
+__label__构造方法 __label__对象和类 构造方法 类 名字 相同 构造方法 没有 返回值
+__label__构造方法 __label__对象和类 定义 构造方法 默认 构造方法 会 失效
+__label__构造方法 __label__对象和类 大多 需要 一个 参数 构造方法
+__label__构造方法 __label__对象和类 下面 一个 使用 构造方法 例子
+__label__算术运算符 表列出 算术运算符
+__label__算术运算符 操作符   描述  加法  -  相加 运算符 两侧 值  例子  A   B  等于  30
+__label__关系运算符 下表为 支持 关系运算符
+__label__关系运算符 运算符  >  描述  检查 左 操作数 值 是否 大于 右 操作数 值 条件 真  例子  A >  B 假
+__label__关系运算符 运算符  <  描述  检查 左 操作数 值 是否 小于 右 操作数 值 条件 真  例子  A  < B 真
+__label__关系运算符 运算符  >  描述  检查 左 操作数 值 是否 大于 等于 右 操作数 值 条件 真  例子  A >   B 假
+__label__位运算符 定义 位运算符 应用 整数 类型 int 长 整型 long 短 整型 short 字符 型 char 字节 型 byte 类型
+__label__位运算符 假设 a   60b   13 二进制 格式 表示
+__label__位运算符 表列出 位运算符 基本 运算 假设 整数 变量  A  值  60  变量  B  值  13
+__label__位运算符 操作符  ＆  描述  相对 应位  例子  A ＆ B 得到 12 0000  1100
+__label__位运算符 操作符  〜  描述  按位 取反 运算符 翻转 操作数 一位 变成 11 变成  例子  〜 A 得到 - 61 1100  0011
+__label__位运算符 操作符  < <  描述  按位 左移 运算符 左 操作数 按位 左移 右 操作数 指定 位数  例子  A  < <  得到 240  1111  0000
+__label__位运算符 操作符  > >  描述  按位 右移 运算符 左 操作数 按位 右移 右 操作数 指定 位数  例子  A  > >  得到 15  1111
+__label__逻辑运算符 表列出 逻辑运算符 基本 运算 假设 布尔 变量 A 真 变量 B 假
+__label__逻辑运算符 操作符  &&  描述  称为 逻辑 运算符 当且 仅 两个 操作数 真 条件 真  例子  A  &&  B 假
+__label__逻辑运算符 使用 逻辑运算符 时 两个 操作数 true 时 true 得到 第一个 操作 false 时其 必定 false 这时候 不会 判断 第二个 操作
+__label__赋值运算符 下面 语言 支持 赋值运算符
+__label__赋值运算符 操作符  -   描述  减 赋值 操作符 左 操作数 右 操作数 相减 赋值 左 操作数  例子  C  -   A 等价 C   C  -  A
+__label__赋值运算符 操作符  ＆  描述  按位 赋值运算符  例子  C ＆  等价 C   C ＆
+__label__赋值运算符 操作符  |   描述  按位 赋值 操作符  例子  C  |   等价 C   C  | 
+__label__条件运算符（?:） 条件运算符 称为 三元 运算符
+__label__Java运算符优先级 ＋ 表达式 加号 优先 计算 答案  18 乘号 优先 答案  14
+__label__Java运算符优先级 下表中 具有 最高 优先级 运算符 表 上面 低优先级 表 底部
+__label__Java运算符优先级 类别  加性  操作符   -  关联性  左到 右
+__label__Java运算符优先级 类别  按位  操作符  ＆  关联性  左到 右
+__label__Java运算符优先级 类别  逻辑  操作符  &&  关联性  左到 右
+__label__Java运算符优先级 类别  逻辑  操作符  |  |  关联性  左到 右
+__label__Java运算符优先级 类别  条件  操作符   关联性  从右到左
+__label__Java运算符优先级 类别  赋值  操作符     -      ％  > >   < <  ＆  ^   |   关联性  从右到左
+__label__switch-case语句 switch  语句 中 变量 类型  byteshortint   char
+__label__switch-case语句 __label__Java常量   SE   switch  支持 字符串  String  类型  case  标签 必须 字符串 常量 字面 量
+__label__switch-case语句 程序 跳转  switch  语句 后面 语句 执行
+__label__switch-case语句 __label__Java包(package) case  语句 必须 包含  break  语句
+__label__switch-case语句 没有  break  语句 出现 程序 会 继续执行 一条  case  语句 出现  break  语句
+__label__switch-case语句 default  没有  case  语句 值 变量值 相等 执行
+__label__if-else语句 使用  if else  if else  语句 需要 注意 下面 几点
+__label__if-else语句 一个  else  if  语句 检测  true  else  if   else  语句 跳 执行
+__label__Java多态 __label__Java接口 __label__Java包(package) 功能 相似 相关 类 接口 组织 同一个 包中 方便 类 查找 使用
+__label__Java多态 __label__Java接口 __label__Java包(package) 使用 包 package 这种 机制 防止 命名 冲突 访问控制 提供 搜索 定位 类 class 接口 枚举 enumerations 注释 annotation
+__label__Java包(package) , 一个 Something java  文件 内容
+__label__Java包(package) 以下   中 包
+__label__Java包(package) java io - 包含 输入输出 功能 函数
+__label__Java多态 __label__Java接口 __label__Java包(package) 开发者 一组 类 接口 打包 定义 包
+__label__Java多态 __label__Java接口 __label__Java包(package) 实际 开发 中 做 值得 提倡 完成 类 实现 之后 相关 类 分组 编程 更 容易 确定 类 接口 枚举 注释 相关
+__label__对象和类 __label__Java方法 __label__Java包(package)  Boss  类  payroll  包中 会 Boss  类 必须 使用 下面 几种 方法 引用 包 中的类
+__label__Java包(package) __label__Java关键字  import  关键字 引入 使用 通配符 
+__label__Java包(package) 下面 管理  java  中 文件 一种 简单 方式
+__label__Java多态 __label__Java接口 __label__Java包(package) 将类 接口 类型 源码 放在 一个 文本 中 文件 名字 类型 名字 java 扩展名
+__label__Java包(package) 
+__label__Java包(package) 接下来 源文件 放在 一个 目录 中 目录 对应 类 包 名字
+__label__Java包(package) 现在 正确 类名 路径 将会 样子
+__label__Java包(package) 路径名  - >    vehicle \ Car java   windows  系统 中
+__label__Java多态  Windows  下弹 出  Windows  帮助 支持
+__label__Java多态  消除 类型 之间 耦合 关系
+__label__Java多态  替换 性
+__label__Java多态  简化 性
+__label__Java多态 __label__Java继承 继承
+__label__Java多态 父类 引用 指向 子类 对象 Parent  p   new  Child
+__label__Java多态 __label__Java方法 使用 多态 方式 调用 方法 时 检查 父类 中 是否 方法 没有 编译 错误 调用 子类 同名 方法
+__label__Java多态 __label__Java接口  生活 中 接口 最具 代表性 插座 一个 三接头 插头 接 三孔 插座 中 每个 国家 规定 接口 规则 可能 国外 不行 是因为 国外 定义 接口类型
+__label__对象和类 对象 对象 类 一个 实例 状态 行为
+__label__对象和类 一条 狗 一个 对象 状态 颜色 名字 品种 行为 摇尾巴 吃
+__label__对象和类 一条 狗来 举例 状态 名字 品种 颜色 行为 摇尾巴 跑
+__label__对象和类 现实 对象 软件 对象 之间 十分相似
+__label__对象和类 __label__Java方法 软件 对象 状态 属性 行为 方法 体现
+__label__对象和类 __label__Java方法 软件开发 中 方法 操作 对象 内部 状态 改变 对象 相互 调用 方法 完成
+__label__构造方法 __label__对象和类 __label__Java局部变量 局部变量 方法 构造方法 语句 块 中 定义 变量 称为 局部变量
+__label__构造方法 __label__对象和类 每个 类 构造方法
+__label__构造方法 __label__对象和类 创建 一个 对象 至少 调用 一个 构造方法
+__label__构造方法 __label__对象和类 下面 一个 构造方法 示例
+__label__对象和类 __label__Java包(package) 声明 声明 一个 对象 包括 对象 名称 对象 类型
+__label__构造方法 __label__对象和类 初始化 使用  new  创建对象 时会 调用 构造方法 初始化 对象
+__label__对象和类 __label__Java包(package) 一个 类 定义 包中  package  语句 应该 源文件 首行
+__label__对象和类 __label__Java包(package) 没有  package  语句  import  语句 应该 源文件 中 前面
+__label__Java包(package) __label__Java方法 __label__Java接口 __label__Java封装 面向对象 程式设计 方法 中 封装 英语 Encapsulation 指 一种 抽象性 函式 接口的实现 细节 部分 包装 隐藏 起来 方法
+__label__Java封装  类 内部 结构 自由 修改
+__label__Java多态 __label__抽象类 __label__Java包(package) 面向对象 概念 中 对象 类来 描绘 类 描绘 对象 一个 类中 没有 包含 足够 信息 描绘 一个 具体 对象 类 抽象类
+__label__Java多态 __label__构造方法 __label__抽象类 __label__对象和类 抽象类 不能 实例 化 对象 之外 类 功能 依然 存在 成员 变量 成员 方法 构造方法 访问 方式 普通 类
+__label__抽象类 __label__Java包(package) __label__Java方法 父类 包含 子类 集合 常见 方法 父类 抽象 不能 使用 方法
+__label__Java多态 __label__抽象类 __label__Java包(package) 想 设计 一个 类 该类 包含 一个 特别 成员 方法 方法 具体 实现 子类 确定 父类 中 声明 方法 抽象方法
+__label__Java多态 __label__抽象类 抽象方法 没有 定义方法 名 后面 直接 一个 分号 花 括号
+__label__Java多态 __label__Java接口 __label__Java集合框架（Collection） __label__抽象类 接口 英文 Interface JAVA 编程语言 中是 一个 抽象 类型 抽象方法 集合接口 通常 interface 声明
+__label__Java多态 __label__Java接口 接口 不能 用于 实例 化 对象
+__label__Java多态 __label__Java接口 __label__Java继承 接口 类 继承 类 实现
+__label__Java继承 __label__Java接口 __label__Java多态 __label__非访问修饰符 __label__访问控制修饰符 __label__抽象类  抽象类 中 成员 变量 各种类型 接口 中 成员 变量 只能  public  static  final  类型
+__label__Java多态 __label__Java接口 __label__Java关键字 Interface 关键字 声明 一个 接口
+__label__Java接口 __label__Java关键字 __label__Java多态 __label__非访问修饰符 __label__Java方法 接口 中 一个 方法 隐式 抽象 声明 时 同样 需要 abstract 关键字
+__label__Java多态 __label__Java接口 __label__Java方法 当类 实现 接口 类要 实现 接口 中 方法
+__label__Java多态 __label__Java接口 实现 一个 接口 语法 使用 公式
+__label__Java多态 __label__Java接口 实现 接口 注意 规则
+__label__Java多态 __label__Java接口 __label__Java继承 一个 接口 继承 一个 接口 类 之间 继承 方式 比较 相似
+__label__Java接口 __label__Java方法 标记接口 没有 方法 属性 接口 仅仅 表明 类 属于 一个 特定 类型 , 供 代码 测试 允许 做 事情
+__label__Java多态 __label__Java接口 __label__Java包(package) __label__Java继承 java awt event  包中  MouseListener  接口 继承  java util EventListener  接口定义
+__label__Java接口 标记接口 主要 用于 以下 两种 目的
+__label__Java继承 兔子 羊 属于 食草动物 类 狮子 豹 属于 食肉动物 类
+__label__Java继承 食草动物 食肉动物 属于 动物 属性 行为 差别 子类 会 具有 父类 特性 会 具有 特性
+__label__Java继承 __label__Java关键字   中  extends  关键字 申明 一个 类 是从 一个 类 继承 而来 形式
+__label__Java继承 __label__Java方法 __label__访问控制修饰符 子类 拥有 父类 非  private  属性 方法
+__label__Java继承   中类 继承 单一 继承 也就是说 一个 子类 只能 拥有 一个 父类  extends  只能 继承 一个 类
+__label__Java继承 __label__Java关键字 this 关键字 指向 引用
+__label__非访问修饰符 __label__Java继承 __label__Java方法 __label__访问控制修饰符 声明 方法 修饰符 public private default protected  final  返回值 类型  方法 名 { 方法 体 }
+__label__非访问修饰符 __label__Java继承 __label__Java方法 注  final  定义 类 属性 方法  final 
+__label__对象和类 __label__构造方法 __label__Java继承 子类 继承 父类 构造器 构造方法 构造函数 调用 隐式 显式
+__label__Java继承 __label__重写(Override) __label__Java关键字 父类 构造器 带有 参数 必须 子类 构造器 中显式  super  关键字 调用 父类 构造器 配以 适当 参数 列表
+__label__Java继承 __label__重写(Override) __label__Java关键字 父类 构造器 没有 参数 子类 构造器 中 需要 使用  super  关键字 调用 父类 构造器 系统 会 自动 调用 父类 无参 构造器
+__label__Java多态 __label__Java方法 __label__重写(Override) 重写 子类 父类 允许 访问 方法 实现 过程 进行 重新 编写 ,  返回值 形参 不能 改变
+__label__Java多态 __label__重写(Override) 重写 好处 子类 需要 定义 特定 行为
+__label__Java多态 __label__Java方法 __label__重写(Override) 返回 类型 重写 方法 返回 类型 相同 必须 父类 返回值 派生类 java5  更 早 版本 返回 类型 java7  更 高 版本 不同
+__label__Java多态 __label__Java方法 __label__重写(Override) 父类 成员 方法 只能 子类 重写
+__label__Java多态 __label__Java方法 __label__重写(Override) __label__Java异常 重写 方法 能够 抛出 非 强制 异常 重写 方法 是否 抛出 异常
+__label__Java继承 __label__Java关键字 __label__Java多态 __label__Java方法 __label__重写(Override) 需要 子类 中 调用 父类 重写 方法 时要 使用  super  关键字
+__label__重载(Overload) 重载 规则
+__label__重载(Overload) __label__Java多态 __label__Java方法 __label__重写(Override) __label__重写与重载之间的区别 区别 点  访问  重载 方法  修改  重写 方法  一定 不能 做 更 严格 限制 降低 限制

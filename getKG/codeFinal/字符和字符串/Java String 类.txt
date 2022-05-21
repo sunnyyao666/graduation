@@ -1,0 +1,32 @@
+String类
+<p>下面的代码执行后，len 变量等于 14:</p><div class="example">
+<h2 class="example">StringDemo.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">StringDemo</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">site</span><span class="hl-code"> = </span><span class="hl-quotes">"</span><span class="hl-string">www.runoob.com</span><span class="hl-quotes">"</span><span class="hl-code">;
+        </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">len</span><span class="hl-code"> = </span><span class="hl-identifier">site</span><span class="hl-code">.</span><span class="hl-identifier">length</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-quotes">"</span><span class="hl-string">JavaKG网址长度 : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">len</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+JavaKG网址长度 : 14
+</pre>
+*******
+String类
+<p>
+下面是一个例子:</p><div class="example">
+<h2 class="example">StringDemo.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">StringDemo</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">     
+        </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">string1</span><span class="hl-code"> = </span><span class="hl-quotes">"</span><span class="hl-string">JavaKG网址：</span><span class="hl-quotes">"</span><span class="hl-code">;     
+        </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">1、</span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">string1</span><span class="hl-code"> + </span><span class="hl-quotes">"</span><span class="hl-string">www.runoob.com</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;  
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例编译运行结果如下：</p><pre>
+1、JavaKG网址：www.runoob.com
+</pre>
+*******

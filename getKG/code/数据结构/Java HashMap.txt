@@ -1,0 +1,149 @@
+Java HashMap
+<p>
+HashMap 类提供了很多有用的方法，添加键值对(key-value)可以使用 put() 方法:</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">1</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">2</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>Sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>
+执行以上代码，输出结果如下：</p><pre>{1=Google, 2=JavaKG, 3=Taobao, 4=Zhihu}</pre><p>以下实例创建一个字符串（String）类型的 key 和字符串（String）类型的 value：</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">String</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">String</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"one"</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"two"</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"three"</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"four"</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>Sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>
+执行以上代码，输出结果如下：</p><pre>{four=Zhihu, one=Google, two=JavaKG, three=Taobao}</pre>
+*******
+Java HashMap
+<p>我们可以使用 get(key) 方法来获取 key 对应的 value:</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">1</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">2</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>Sites.<span style="color: #006633;">get</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>
+执行以上代码，输出结果如下：</p><pre>Taobao</pre>
+*******
+Java HashMap
+<p>我们可以使用 remove(key) 方法来删除 key 对应的键值对(key-value):</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">1</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">2</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">remove</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>Sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>{1=Google, 2=JavaKG, 3=Taobao}</pre><p>删除所有键值对(key-value)可以使用 clear 方法：</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">1</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">2</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">clear</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>Sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>{}</pre>
+*******
+Java HashMap
+<p>
+如果要计算 HashMap 中的元素数量可以使用 size() 方法：</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">1</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">2</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>Sites.<span style="color: #006633;">size</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>4</pre>
+*******
+Java HashMap
+<p>可以使用 for-each 来迭代 HashMap 中的元素。</p><p>
+如果你只想获取 key，可以使用 keySet() 方法，然后可以通过 get(key) 获取对应的 value，如果你只想获取 value，可以使用 values() 方法。</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashMap 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashMap</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+        <span style="color: #666666; font-style: italic;">// 创建 HashMap 对象 Sites</span><br/>
+        HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span> Sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashMap<span style="color: #339933;">&lt;</span><span style="color: #003399;">Integer</span>, String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 添加键值对</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">1</span>, <span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">2</span>, <span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span>, <span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        Sites.<span style="color: #006633;">put</span><span style="color: #009900;">(</span><span style="color: #cc66cc;">4</span>, <span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #666666; font-style: italic;">// 输出 key 和 value</span><br/>
+        <span style="color: #000000; font-weight: bold;">for</span> <span style="color: #009900;">(</span><span style="color: #003399;">Integer</span> i <span style="color: #339933;">:</span> Sites.<span style="color: #006633;">keySet</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+            <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"key: "</span> <span style="color: #339933;">+</span> i <span style="color: #339933;">+</span> <span style="color: #0000ff;">" value: "</span> <span style="color: #339933;">+</span> Sites.<span style="color: #006633;">get</span><span style="color: #009900;">(</span>i<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #009900;">}</span><br/>
+        <span style="color: #666666; font-style: italic;">// 返回所有 value 值</span><br/>
+        <span style="color: #000000; font-weight: bold;">for</span><span style="color: #009900;">(</span><span style="color: #003399;">String</span> value<span style="color: #339933;">:</span> Sites.<span style="color: #006633;">values</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+          <span style="color: #666666; font-style: italic;">// 输出每一个value</span><br/>
+          <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">print</span><span style="color: #009900;">(</span>value <span style="color: #339933;">+</span> <span style="color: #0000ff;">", "</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #009900;">}</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>
+key: 1 value: Google
+key: 2 value: JavaKG
+key: 3 value: Taobao
+key: 4 value: Zhihu
+Google, JavaKG, Taobao, Zhihu,
+</pre>
+*******

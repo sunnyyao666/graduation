@@ -1,0 +1,59 @@
+Java 封装
+<p>让我们来看一个java封装类的例子：</p><div class="example">
+<h2 class="example">EncapTest.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> 文件名: EncapTest.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">EncapTest</span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">idNum</span><span class="hl-code">;
+   </span><span class="hl-reserved">private</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">getAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">age</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">getName</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">name</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">getIdNum</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-reserved">return</span><span class="hl-code"> </span><span class="hl-identifier">idNum</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setAge</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">newAge</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">age</span><span class="hl-code"> = </span><span class="hl-identifier">newAge</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setName</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">newName</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">name</span><span class="hl-code"> = </span><span class="hl-identifier">newName</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">setIdNum</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">newId</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">idNum</span><span class="hl-code"> = </span><span class="hl-identifier">newId</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上实例中public方法是外部类访问该类成员变量的入口。</p><p>
+通常情况下，这些方法被称为getter和setter方法。</p><p>
+因此，任何要访问类中私有成员变量的类都要通过这些getter和setter方法。</p><p>
+通过如下的例子说明EncapTest类的变量怎样被访问：</p><div class="example">
+<h2 class="example">RunEncap.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-comment">/*</span><span class="hl-comment"> F文件名 : RunEncap.java </span><span class="hl-comment">*/</span><span class="hl-code">
+</span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">RunEncap</span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">EncapTest</span><span class="hl-code"> </span><span class="hl-identifier">encap</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">EncapTest</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">encap</span><span class="hl-code">.</span><span class="hl-identifier">setName</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">James</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">encap</span><span class="hl-code">.</span><span class="hl-identifier">setAge</span><span class="hl-brackets">(</span><span class="hl-number">20</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-identifier">encap</span><span class="hl-code">.</span><span class="hl-identifier">setIdNum</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">12343ms</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+ 
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">print</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">Name : </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">encap</span><span class="hl-code">.</span><span class="hl-identifier">getName</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">+ 
+                             </span><span class="hl-quotes">"</span><span class="hl-string"> Age : </span><span class="hl-quotes">"</span><span class="hl-code">+ </span><span class="hl-identifier">encap</span><span class="hl-code">.</span><span class="hl-identifier">getAge</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下:</p><pre>
+Name : James Age : 20
+</pre>
+*******

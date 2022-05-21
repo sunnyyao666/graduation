@@ -1,0 +1,117 @@
+Java HashSet
+<p>
+HashSet 类提供类很多有用的方法，添加元素可以使用 add() 方法:</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashSet 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashSet</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+    HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span> sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// 重复的元素不会被添加</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>
+执行以上代码，输出结果如下：</p><pre>[Google, JavaKG, Zhihu, Taobao]</pre><p></p>
+*******
+Java HashSet
+<p>我们可以使用 contains() 方法来判断元素是否存在于集合当中:</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashSet 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashSet</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+    HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span> sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// 重复的元素不会被添加</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>sites.<span style="color: #006633;">contains</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>true</pre>
+*******
+Java HashSet
+<p>我们可以使用 remove() 方法来删除集合中的元素:</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashSet 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashSet</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+    HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span> sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>     <span style="color: #666666; font-style: italic;">// 重复的元素不会被添加</span><br/>
+        sites.<span style="color: #006633;">remove</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// 删除元素，删除成功返回 true，否则为 false</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>[Google, JavaKG, Zhihu]</pre><p>删除集合中所有元素可以使用 clear 方法：</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashSet 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashSet</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+    HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span> sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>     <span style="color: #666666; font-style: italic;">// 重复的元素不会被添加</span><br/>
+        sites.<span style="color: #006633;">clear</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  <br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>sites<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>[]</pre>
+*******
+Java HashSet
+<p>
+如果要计算 HashSet 中的元素数量可以使用 size() 方法：</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashSet 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashSet</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+    HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span> sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>     <span style="color: #666666; font-style: italic;">// 重复的元素不会被添加</span><br/>
+        <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>sites.<span style="color: #006633;">size</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  <br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>4</pre>
+*******
+Java HashSet
+<p>可以使用 for-each 来迭代 HashSet 中的元素。</p><div class="example"><h2 class="example">实例</h2> <pre class="example_code">
+<span style="color: #666666; font-style: italic;">// 引入 HashSet 类      </span><br/>
+<span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">java.util.HashSet</span><span style="color: #339933;">;</span><br/>
+<br/>
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">class</span> JavaKGTest <span style="color: #009900;">{</span><br/>
+    <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">(</span><span style="color: #003399;">String</span><span style="color: #009900;">[</span><span style="color: #009900;">]</span> args<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+    HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span> sites <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> HashSet<span style="color: #339933;">&lt;</span>String<span style="color: #339933;">&gt;</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Google"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Taobao"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"Zhihu"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        sites.<span style="color: #006633;">add</span><span style="color: #009900;">(</span><span style="color: #0000ff;">"JavaKG"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>     <span style="color: #666666; font-style: italic;">// 重复的元素不会被添加</span><br/>
+        <span style="color: #000000; font-weight: bold;">for</span> <span style="color: #009900;">(</span><span style="color: #003399;">String</span> i <span style="color: #339933;">:</span> sites<span style="color: #009900;">)</span> <span style="color: #009900;">{</span><br/>
+            <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">(</span>i<span style="color: #009900;">)</span><span style="color: #339933;">;</span><br/>
+        <span style="color: #009900;">}</span><br/>
+    <span style="color: #009900;">}</span><br/>
+<span style="color: #009900;">}</span><br/>
+</pre></div><p>执行以上代码，输出结果如下：</p><pre>
+Google
+JavaKG
+Zhihu
+Taobao
+</pre>
+*******

@@ -1,0 +1,105 @@
+switch-case语句
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-comment">//</span><span class="hl-comment">char grade = args[0].charAt(0);</span><span class="hl-comment"></span><span class="hl-code">
+      </span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">grade</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">C</span><span class="hl-quotes">'</span><span class="hl-code">;
+ 
+      </span><span class="hl-reserved">switch</span><span class="hl-brackets">(</span><span class="hl-identifier">grade</span><span class="hl-brackets">)</span><span class="hl-code">
+      </span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">A</span><span class="hl-quotes">'</span><span class="hl-code"> :
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">优秀</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; 
+            </span><span class="hl-reserved">break</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">B</span><span class="hl-quotes">'</span><span class="hl-code"> :
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">C</span><span class="hl-quotes">'</span><span class="hl-code"> :
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">良好</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">break</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">D</span><span class="hl-quotes">'</span><span class="hl-code"> :
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">及格</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">break</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">F</span><span class="hl-quotes">'</span><span class="hl-code"> :
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">你需要再努力努力</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">break</span><span class="hl-code">;
+         </span><span class="hl-reserved">default</span><span class="hl-code"> :
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">未知等级</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">你的等级是 </span><span class="hl-quotes">"</span><span class="hl-code"> + </span><span class="hl-identifier">grade</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+良好
+你的等级是 C
+</pre><p>如果 case 语句块中没有 break 语句时，JVM 并不会顺序输出每一个 case 对应的返回值，而是继续匹配，匹配不成功则返回默认 case。</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">5</span><span class="hl-code">;
+      </span><span class="hl-reserved">switch</span><span class="hl-brackets">(</span><span class="hl-identifier">i</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">0</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">1</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">default</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">default</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+default
+</pre><p>如果 case 语句块中没有 break 语句时，匹配成功后，从当前 case 开始，后续所有 case 的值都会输出。</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">1</span><span class="hl-code">;
+      </span><span class="hl-reserved">switch</span><span class="hl-brackets">(</span><span class="hl-identifier">i</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">0</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">1</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">default</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">default</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+1
+2
+default
+</pre><p>如果当前匹配成功的 case 语句块没有 break 语句，则从当前 case 开始，后续所有 case 的值都会输出，如果后续的 case 语句块有 break 语句则会跳出判断。</p><div class="example">
+<h2 class="example">Test.java 文件代码：</h2>
+<pre class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">i</span><span class="hl-code"> = </span><span class="hl-number">1</span><span class="hl-code">;
+      </span><span class="hl-reserved">switch</span><span class="hl-brackets">(</span><span class="hl-identifier">i</span><span class="hl-brackets">)</span><span class="hl-brackets">{</span><span class="hl-code">
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">0</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">1</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">2</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+         </span><span class="hl-reserved">case</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">3</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-reserved">break</span><span class="hl-code">;
+         </span><span class="hl-reserved">default</span><span class="hl-code">:
+            </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">default</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+      </span><span class="hl-brackets">}</span><span class="hl-code">
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</pre>
+</div><p>以上代码编译运行结果如下：</p><pre>
+1
+2
+3
+</pre>
+*******

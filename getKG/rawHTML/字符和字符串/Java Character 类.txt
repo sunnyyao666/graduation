@@ -1,0 +1,123 @@
+<div class="article-intro" id="content">
+			
+			<h1>Java Character 类</h1>
+<h2>Character类</h2>
+<p>Character 类用于对单个字符进行操作。</p>
+<p>Character 类在对象中包装一个基本类型 <strong>char</strong> 的值</p>
+
+<pre><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> Unicode 字符表示形式</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">uniChar</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-special">\u</span><span class="hl-string">039A</span><span class="hl-quotes">'</span><span class="hl-code">; 
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 字符数组</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-types">char</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">charArray</span><span class="hl-code"> =</span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">b</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">c</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">d</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">e</span><span class="hl-quotes">'</span><span class="hl-code"> </span><span class="hl-brackets">}</span><span class="hl-code">;</span></pre>
+<p>然而，在实际开发过程中，我们经常会遇到需要使用对象，而不是内置数据类型的情况。为了解决这个问题，Java语言为内置数据类型char提供了包装类Character类。
+</p><p>
+Character类提供了一系列方法来操纵字符。你可以使用Character的构造方法创建一个Character类对象，例如：
+</p>
+<pre><span class="hl-identifier">Character</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">Character</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">;</span></pre>
+<p>
+在某些情况下，Java编译器会自动创建一个Character对象。</p>
+<p>例如，将一个char类型的参数传递给需要一个Character类型参数的方法时，那么编译器会自动地将char类型参数转换为Character对象。
+这种特征称为装箱，反过来称为拆箱。
+
+</p>
+
+<div class="example">
+<h2 class="example">实例</h2> 
+<div class="example_code">
+<div class="hl-main"><span class="hl-comment">//</span><span class="hl-comment"> 原始字符 'a' 装箱到 Character 对象 ch 中</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-identifier">Character</span><span class="hl-code"> </span><span class="hl-identifier">ch</span><span class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">a</span><span class="hl-quotes">'</span><span class="hl-code">;
+ 
+</span><span class="hl-comment">//</span><span class="hl-comment"> 原始字符 'x' 用 test 方法装箱</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-comment">//</span><span class="hl-comment"> 返回拆箱的值到 'c'</span><span class="hl-comment"></span><span class="hl-code">
+</span><span class="hl-types">char</span><span class="hl-code"> </span><span class="hl-identifier">c</span><span class="hl-code"> = </span><span class="hl-identifier">test</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">x</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">;</span></div>
+</div>
+</div>
+<hr>
+<h3>转义序列</h3>
+<p>前面有反斜杠（\）的字符代表转义字符，它对编译器来说是有特殊含义的。
+</p><p>下面列表展示了Java的转义序列：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				转义序列</th>
+			<th>
+				描述</th>
+		</tr>
+		<tr>
+			<td>
+				\t</td>
+			<td>
+				在文中该处插入一个tab键</td>
+		</tr>
+		<tr>
+			<td>
+				\b</td>
+			<td>
+				在文中该处插入一个后退键</td>
+		</tr>
+		<tr>
+			<td>
+				\n</td>
+			<td>
+				在文中该处换行</td>
+		</tr>
+		<tr>
+			<td>
+				\r</td>
+			<td>
+				在文中该处插入回车</td>
+		</tr>
+		<tr>
+			<td>
+				\f</td>
+			<td>
+				在文中该处插入换页符</td>
+		</tr>
+		<tr>
+			<td>
+				\'</td>
+			<td>
+				在文中该处插入单引号</td>
+		</tr>
+		<tr>
+			<td>
+				\"</td>
+			<td>
+				在文中该处插入双引号</td>
+		</tr>
+		<tr>
+			<td>
+				\\</td>
+			<td>
+				在文中该处插入反斜杠</td>
+		</tr>
+	</tbody>
+</table>
+<h3>实例</h3>
+<p>
+当打印语句遇到一个转义序列时，编译器可以正确地对其进行解释。
+</p>
+<p>以下实例转义双引号并输出：</p>
+<div class="example">
+<h2 class="example">Test.java 文件代码：</h2> 
+<div class="example_code">
+<div class="hl-main"><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-reserved">class</span><span class="hl-code"> </span><span class="hl-identifier">Test</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+   </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-types">static</span><span class="hl-code"> </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">main</span><span class="hl-brackets">(</span><span class="hl-identifier">String</span><span class="hl-brackets">[</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-identifier">args</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+      </span><span class="hl-identifier">System</span><span class="hl-code">.</span><span class="hl-identifier">out</span><span class="hl-code">.</span><span class="hl-identifier">println</span><span class="hl-brackets">(</span><span class="hl-quotes">"</span><span class="hl-string">访问</span><span class="hl-special">\"</span><span class="hl-string">菜鸟教程!</span><span class="hl-special">\"</span><span class="hl-quotes">"</span><span class="hl-brackets">)</span><span class="hl-code">;
+   </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span></div>
+</div>
+</div>
+<p>以上实例编译运行结果如下：
+</p>
+<pre>
+访问"菜鸟教程!"
+</pre>
+	<!-- 其他扩展 -->
+						
+			</div>
